@@ -1,0 +1,10 @@
+@font-face{
+    font-family: 'Playfair Display';
+    src: url('includes/assets/font/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf0') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#test{
+    font-family: 'Playfair Display';
+}
