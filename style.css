@@ -3,14 +3,49 @@
   margin: 0;
 }
 
+body{
+    background-color: #D9D9D9;
+}
 @font-face{
     font-family: 'Playfair Display';
-    src: url('includes/assets/font/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf0') format('truetype');
+    src: url('includes/assets/font/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 #backgroundwerkzaamheden{
-    height: 1500px;
-    background-color: #D9D9D9;
+    width: 100%;
+}
+
+#tuinontwerp{
+    height: 250px;
+    width: 450px;
+    margin-top: 100px;
+    margin-left: 150px;
+    background-color: #014421;
+    border-radius: 10px;
+}
+#tuinaanleg{
+    height: 250px;
+    width: 450px;
+    margin-top: -250px;
+    margin-left: 790px;
+    background-color: #014421;
+    border-radius: 10px;
+}
+#tuinonderhoud{
+    height: 250px;
+    width: 450px;
+    margin-top: 300px;
+    margin-left: 150px;
+    background-color: #014421;
+    border-radius: 10px;
+}
+#zwemvijvers{
+    height: 250px;
+    width: 450px;
+    margin-top: 300px;
+    margin-left: 790px;
+    background-color: #014421;
+    border-radius: 10px;
 }
