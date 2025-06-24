@@ -45,30 +45,127 @@
   font-size: 34px;
 }
 
-#contactform{
-  margin-top: 50px;
-  background-color: #D9D9D9;
-  border: 20px solid #014421;
-  border-radius: 10px;
-  height: 250px;
-  width: 783px;
-  margin-right: 51px;
-
-  text-align: center;
-  font-size: 34px;
-}
-
-#hendrikrond{
-  clip-path: circle(50%);
-
-  width: 300px;
-  height: 300px;
-  margin-top: 50px;
-}
-
 #box1{
   display: flex;
   width: 100%;
   justify-content: space-evenly;
 }
+#hendrikrond{
+  clip-path: circle(50%);
+  
+  width: 350px;
+  height: 350px;
+  margin-top: 50px;
+}
+#contactformulier{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  
+  background-color: #D9D9D9;
+  border: 20px solid #014421;
+  font-size: 24px;
+
+  margin-top: 50px;
+  border-radius: 10px;
+  height: 300px;
+  width: 783px;
+  margin-right: 10px;
+}
+#formulierinhoud {
+  display: flex;
+  gap: 20px;
+}
+#formnamen {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  gap: 18px;
+}
+#formvelden {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#formvelden input,
+#formvelden textarea {
+  padding: 6px 10px;
+  font-size: 18px;
+  width: 300px;
+  box-sizing: border-box;
+  border: 3px solid #000000;
+  border-radius: 5px;
+}
+
+#box2{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+#hendrikvierkant{
+  width: 350px;
+  height: 188px;
+  border-radius: 10px;
+  margin-top: 52px;
+}
+#gegevenshendrik{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  background-color: #D9D9D9;
+  border: 20px solid #014421;
+  font-size: 24px;
+
+  margin-top: 50px;
+  border-radius: 10px;
+  height: 150px;
+  width: 800px;
+}
+#gegevens{
+  text-align: left;
+  padding: 15px;
+}
+
+#box3{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+#werkdagen{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  
+  background-color: #D9D9D9;
+  border: 20px solid #014421;
+  font-size: 24px;
+
+  margin-top: 50px;
+  border-radius: 10px;
+  height: 250px;
+  width: 300px;
+}
+#werktijden{
+  width: 225px;
+  padding: 5px;
+}
+#maps{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  
+  background-color: #D9D9D9;
+  border: 20px solid #014421;
+  font-size: 24px;
+
+  margin-top: 50px;
+  border-radius: 10px;
+  height: 250px;
+  width: 800px;
+}
+
 /* Einde contactpagina */
