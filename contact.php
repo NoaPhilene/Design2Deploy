@@ -19,7 +19,7 @@ include("includes/topbar.php");
             </div>
             <div id="formvelden">
                 <input type="email" required>
-                <input type="tel" required>
+                <input type="number" required>
                 <textarea cols="26" rows="4"></textarea>
 
                 <input type="submit" value="Verstuur">
