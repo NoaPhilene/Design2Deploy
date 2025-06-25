@@ -54,6 +54,12 @@ include("includes/header.php");
         <!-- tijdelijk br -->
         <br>
         </div>
+
+        <div id="werkzaamheden">Werkzaamheden
+
+        </div>
+        <br>
+
     </div>
 
     <script src="script.js"></script>

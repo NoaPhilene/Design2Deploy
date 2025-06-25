@@ -27,6 +27,18 @@ body {
   width: 930px;
 }
 
+#werkzaamheden{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  color: white;
+  font-size: 44px;
+
+  width: auto;
+  height: 200px;
+  background-color: #014421;
+}
+
 /* slidshow welkom pagina boven */
 
 .mySlides {display: none;}
