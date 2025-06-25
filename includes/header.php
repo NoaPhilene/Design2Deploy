@@ -8,4 +8,6 @@
   <link rel="stylesheet" href="style.css">
 
   <meta name="theme-color" content="#fafafa">
+
+   <link rel="icon" href="assets\fotos\mini_logo1.png" sizes="any">
 </head>
