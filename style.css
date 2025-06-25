@@ -1,32 +1,30 @@
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    background-color: #d9d9d9;
+  background-color: #d9d9d9;
 }
 
 @font-face{
-    font-family: 'Playfair Display';
-    src: url('assets/font/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Playfair Display';
+  src: url('assets/font/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* Welkom pagina */
-
 #container {
-    width: 100%;
-    margin: 0 auto;
+  width: 100%;
+  margin: 0 auto;
 }
 
-
 #beginTextVakWelkom p{
-    font-family: 'Playfair Display';
-    font-weight: normal;
-    font-size: 44px;
-    width: 930px;
+  font-family: 'Playfair Display';
+  font-weight: normal;
+  font-size: 44px;
+  width: 930px;
 }
 
 /* slidshow welkom pagina boven */
@@ -36,13 +34,13 @@ img {vertical-align: middle;}
 
 /* stippen in de slidshow */
 .dot {
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
 }
 
 .active {
