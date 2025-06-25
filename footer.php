@@ -18,7 +18,9 @@
                 
             </div>
                 <div class="column">
+                    <a href="contact.php">
                  <h2>Contact gegevens:</h2>
+                </a>
                  
              </div>
              <div class="column">
