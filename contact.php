@@ -33,9 +33,15 @@ include("includes/header.php");
 
         <div id="gegevenshendrik">
             <h2>Mijn contactgegevens</h2>
-            <div id="gegevens">
-                Telefoonnummer: 06 98765432<br>
-                E-mail: hendrikhogendijkhovenier@gmail.com
+            <div id="gegevensrijen">
+                <div class="gegevensrij">
+                    <label for="telefoon">Telefoonnummer:</label>
+                    <div class="gegevensveld" id="telefoon">06 98765432</div>
+                </div>
+                <div class="gegevensrij">
+                    <label for="email">E-mail:</label>
+                    <div class="gegevensveld" id="email"><a href ="mailto:hendrikhogendijkhovenier@gmail.com">hendrikhogendijkhovenier@gmail.com</a></div>
+                </div>
             </div>
         </div>
     </div>
@@ -53,8 +59,8 @@ include("includes/header.php");
                 Zondag: Gesloten
             </div>
         </div>
-        <div id="maps">
-
+        <div class="google-maps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23316.052174134664!2d5.165547477687677!3d52.101606201091116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c669b4272488a7%3A0xb6f7ab211abaaf5!2sAmateur%20Gardeners%20Association%20Het%20Kloosterpark!5e0!3m2!1sen!2snl!4v1750835807115!5m2!1sen!2snl" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
     
