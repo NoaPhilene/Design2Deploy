@@ -1,5 +1,6 @@
 <?php
 include("includes/header.php");
+include("includes/topbar.php");
 ?>
 
 <body>
@@ -67,3 +68,8 @@ include("includes/header.php");
 </div>
 
 </body>
+<footer>
+<?php
+include("includes/footer.php");
+?>
+</footer>
