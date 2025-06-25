@@ -26,7 +26,7 @@
       <a href="diensten.php">
         <div id="button">Diensten</div>
       </a>
-      <a href="reviews.php">
+      <a href="recensies.php">
         <div id="button">Recensies</div>
       </a>
       <a href="contact.php">
