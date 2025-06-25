@@ -327,3 +327,130 @@ a {
 }
 
 /* Einde contactpagina */
+
+#test{
+    font-family: 'Playfair Display';
+    background-color: red;
+}
+
+
+/*Begin topbar*/
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    width: 100vw;
+    height: 160px;
+    background-color: #014421;
+    display: flex;
+    padding: 5px 10px;
+}
+
+#titel{
+    color: white;
+    font-size: 40px;
+    flex: 1;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+.logo_cirkel{
+  width: 150px;
+  height: 150px;
+  background-color: #ffffff; 
+  border-radius: 50%; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#logo{
+    width: 190px;
+    height: auto;
+}
+
+.button-bar{
+     display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 100vw;
+    height: 50px;
+    background-color: #013d1d;
+    display: flex;
+    padding: 5px 10px;
+    gap: 100px;
+}
+
+#button{
+    width: 150px;
+    height: 30px;
+    border: 1px solid black;
+    background-color: #013319;
+    color: white;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Einde topbar*/
+
+
+/*Begin footer*/
+
+footer {
+    background-color: #014421;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    margin-top: 0;
+    width: 100vw;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h3{
+    font-weight: 100;
+    font-size: 18px;
+}
+
+h4{
+    font-weight: 100;
+    font-size: 21px;
+}
+
+.footer-end{
+     display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row{
+    margin-bottom: 0;
+    padding: 0;
+}
+
+p{
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;    
+}
+
+/*Einde footer*/
