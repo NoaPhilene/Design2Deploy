@@ -13,32 +13,38 @@ include("includes/header.php");
             <div class="slideshow-container">
 
             <div class="mySlides fade">
-                <div class="numbertext">1 / 3</div>
                 <img src="assets/fotos/tuinFoto1.webp" >
-                <div class="text">Caption Text</div>
             </div>
 
             <div class="mySlides fade">
-                <div class="numbertext">2 / 3</div>
-                <img src="assets/fotos/tuinFoto2.webp" >
-                <div class="text">Caption Two</div>
+                <img src="assets/fotos/tuinFoto7.webp" >
             </div>
 
             <div class="mySlides fade">
-                <div class="numbertext">3 / 3</div>
-                <div class="fotoContainer">
-                    <img src="assets/fotos/tuinFoto3.webp" >
-                    <!-- <img src="assets/fotos/tuinFoto4.webp" >
-                    <img src="assets/fotos/tuinFoto10.webp" > -->
-                </div>
-                <div class="text">Caption Three</div>
+                    <img src="assets\fotos\hendrik3.webp" >
             </div>
+
+            <div class="mySlides fade">
+                    <img src="assets/fotos/tuinFoto5.webp" >
+            </div>
+
+            <div class="mySlides fade">
+                    <img src="assets\fotos\hendrik2.webp" >
+            </div>
+
+             <div class="mySlides fade">
+                    <img src="assets/fotos/tuinFoto9.webp" >
+            </div>
+
         </div>
         <br>
         <div style="text-align:center">
             <span class="dot"></span> 
             <span class="dot"></span> 
             <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span>
+            <span class="dot"></span>
         </div>
         
         <div id="beginTextVakWelkom">
