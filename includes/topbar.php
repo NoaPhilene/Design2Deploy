@@ -23,7 +23,7 @@
       <a href="welkom.php">
         <div id="button">Welkom</div>
       </a>
-      <a href="services.php">
+      <a href="diensten.php">
         <div id="button">Diensten</div>
       </a>
       <a href="reviews.php">
