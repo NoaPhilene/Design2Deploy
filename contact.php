@@ -68,8 +68,7 @@ include("includes/topbar.php");
 </div>
 
 </body>
-<footer>
+
 <?php
 include("includes/footer.php");
 ?>
-</footer>

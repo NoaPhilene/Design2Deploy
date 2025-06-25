@@ -4,7 +4,10 @@ include("includes/header.php");
 
 <body>
     <div id="container">
-    <!-- top bar -->
+
+        <?php
+            include("includes/topbar.php");
+        ?>
     
         <div id="achtergrondWelkomPagina">
 
@@ -48,9 +51,14 @@ include("includes/header.php");
         <div id="beginTextVakWelkom">
             <p>Welkom bij de website van Hendrik Hogendijk, hovenier in de regio Utrecht, Zeist en de Bilt.</p>
         </div>
-       
+        <!-- tijdelijk br -->
+        <br>
         </div>
     </div>
 
     <script src="script.js"></script>
 </body>
+
+<?php
+    include("includes/footer.php")
+?>

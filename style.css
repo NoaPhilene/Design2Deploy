@@ -31,7 +31,6 @@ body {
 
 /* slidshow welkom pagina boven */
 
-* {box-sizing: border-box;}
 .mySlides {display: none;}
 img {vertical-align: middle;}
 
@@ -95,6 +94,8 @@ img {vertical-align: middle;}
   font-weight: normal;
   font-style: normal;
 }
+
+/* einde welkom pagina */
 
 
 /*Begin topbar*/
@@ -164,7 +165,6 @@ footer {
   background-color: #014421;
   color: rgb(255, 255, 255);
   padding: 20px;
-  margin-top: 0;
   width: auto;
 }
 
@@ -196,11 +196,6 @@ h4{
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.row{
-  margin-bottom: 0;
-  padding: 0;
 }
 
 p{
