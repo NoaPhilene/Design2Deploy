@@ -5,9 +5,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>hendrik</title>
-  <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="style.css">
 
   <meta name="theme-color" content="#fafafa">
 
-   <link rel="icon" href="assets\fotos\mini_logo1.png" sizes="any">
+  <link rel="icon" href="assets\fotos\mini_logo1.png" sizes="any">
 </head>
+
+ 
+

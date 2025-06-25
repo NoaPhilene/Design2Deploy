@@ -2,9 +2,7 @@
 include("includes/header.php");
 ?>
 
-
 <body>
-
     <div id="container">
     <!-- top bar -->
     
@@ -56,6 +54,3 @@ include("includes/header.php");
 
     <script src="script.js"></script>
 </body>
-
-
-        
