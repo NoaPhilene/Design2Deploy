@@ -20,14 +20,14 @@
 
     
     <div class="button-bar">
-      <a href="start.php">
-        <div id="button">Start</div>
+      <a href="welkom.php">
+        <div id="button">Welkom</div>
       </a>
       <a href="services.php">
-        <div id="button">Services</div>
+        <div id="button">Diensten</div>
       </a>
       <a href="reviews.php">
-        <div id="button">Reviews</div>
+        <div id="button">Recensies</div>
       </a>
       <a href="contact.php">
         <div id="button">Contact</div>
