@@ -219,6 +219,9 @@
     background-color: red;
 }
 
+
+/*Begin topbar*/
+
 .header{
     display: flex;
     justify-content: space-between;
@@ -279,6 +282,11 @@
     align-items: center;
 }
 
+/*Einde topbar*/
+
+
+/*Begin footer*/
+
 footer {
     background-color: #014421;
     color: rgb(255, 255, 255);
@@ -330,3 +338,5 @@ a {
     text-decoration: none;
     color: inherit;    
 }
+
+/*Einde footer*/
