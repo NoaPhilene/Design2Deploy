@@ -54,6 +54,41 @@ include("includes/header.php");
         <!-- tijdelijk br -->
         <br>
         </div>
+
+        <div id="werkzaamheden">Werkzaamheden
+            <div class="knoppenwerkzaamheden">
+                <div class="werkzaamhedenknop"><a href="diensten.php"><img src="assets/fotos/icoontuinontwerp.webp"></a></div>
+                <div class="werkzaamhedenknop"><a href="diensten.php"><img src="assets/fotos/icoontuinaanleg.webp"></a></div>
+                <div class="werkzaamhedenknop"><a href="diensten.php"><img src="assets/fotos/icoontuinonderhoud.webp"></a></div>
+                <div class="werkzaamhedenknop"><a href="diensten.php"><img src="assets/fotos/icoonzwemvijvers.webp"></a></div>
+            </div>
+        </div>
+        <br>
+
+        <div id="werktijdenslideshow">
+            <div id="werktijdenvak">
+                <div id="werktijdenwelkom">
+                    Maandag: 7:00-16:00
+                    Dinsdag: 7:00-16:00
+                    Woensdag: 7:00-16:00
+                    Donderdag: 7:00-16:00
+                    Vrijdag: 7:00-16:00
+                    Zaterdag: Op afspraak
+                    Zondag: Gesloten
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <div id="recensieswelkom">Recensies
+            <div class="recensievakjeswelkom">
+                <div class="recensies"></div>
+                <div class="recensies"></div>
+                <div class="recensies"></div>
+            </div>
+        </div>
+        <br>
+
     </div>
 
     <script src="script.js"></script>
