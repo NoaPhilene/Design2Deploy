@@ -229,8 +229,10 @@ img {vertical-align: middle;}
 }
 
 .logo_cirkel{
-  width: 150px;
-  height: 150px;
+  width: 20vw;
+  height: 20vw;
+  max-width: 150px;
+  max-height: 150px;
   background-color: #ffffff; 
   border-radius: 50%; 
   display: flex;
@@ -240,7 +242,8 @@ img {vertical-align: middle;}
 }
 
 #logo{
-  width: 190px;
+  width: 200px;
+  max-width: 100%;
   height: auto;
 }
 
