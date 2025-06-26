@@ -83,22 +83,27 @@
         
         
         <div id="RecensiesWelkom">
-            <?php
-            try{
-                $stmt = $conn->prepare("SELECT id, bericht, schrijver FROM reccensies ORDER BY id DESC LIMIT 3");   
-                $stmt->execute();
 
-                foreach ($stmt->fetchAll() as $k => $v) {
-                    echo "<div class='RecensiesVakjesWelkom'>
-                        <div id='RecensiesBericht'><p>{$v['bericht']}</p></div>
-                        <div id='RecensiesSchrijver'><p>{$v['schrijver']}</p></div>
-                    </div>";
+            <div id=RecensiesTitle>Recensies</div>
+
+            <div id=RecensiesBoxWelkom>
+                <?php
+                try{
+                    $stmt = $conn->prepare("SELECT id, bericht, schrijver FROM reccensies ORDER BY id DESC LIMIT 3");   
+                    $stmt->execute();
+
+                    foreach ($stmt->fetchAll() as $k => $v) {
+                        echo "<div class='RecensiesVakjesWelkom'>
+                            <div id='RecensiesBericht'><p>{$v['bericht']}</p></div>
+                            <div id='RecensiesSchrijver'><p>{$v['schrijver']}</p></div>
+                        </div>";
+                    }
+
+                }catch (PDOException $e){
+                    echo "Error: " . $e->getMessage();
                 }
-
-            }catch (PDOException $e){
-                echo "Error: " . $e->getMessage();
-            }
-            ?>
+                ?>
+            </div>
         </div>
 
     </div>

@@ -177,10 +177,24 @@ body {
 
 #RecensiesWelkom{
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
   background-color: #014421;
   padding: 50px;
-  gap: 55px
+  gap: 55px;
+}
+
+#RecensiesTitle{
+  color: #FFFFFF;
+  font-size: 44px;
+}
+
+#RecensiesBoxWelkom{
+  display: flex;
+  align-items: flex-start;
+  gap: 55px;
+  width: 100%;
+  justify-content: space-evenly;
 }
 
 .RecensiesVakjesWelkom {
@@ -188,14 +202,14 @@ body {
   flex-wrap: wrap;
   align-content: space-between;
   background-color: #d9d9d9;
-  width: 560px;
+  width: 410px;
   height: auto;
   padding: 20px;
 }
 
-#RecensiesWelkom p{
+.RecensiesVakjesWelkom p{
   font-family: Playfair Display;
-  font-size: 25px;
+  font-size: 22px;
 }
 
 /* slidshow welkom pagina boven */
