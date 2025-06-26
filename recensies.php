@@ -6,9 +6,13 @@ include("includes/topbar.php");
 
 <body>
 
-    <div id="achtergrondRecensiesPagina">
-        <?php
+    <div id=RecensiesTitle>
+        <div id="RecensieBox">Recensies</div>
+    </div>
 
+    <div id="achtergrondRecensiesPagina">
+
+        <?php
             try{
                 $stmt = $conn->prepare("SELECT id, bericht, schrijver FROM reccensies");   
                 $stmt->execute();
@@ -24,7 +28,7 @@ include("includes/topbar.php");
             }
 
         ?>
-        </div>
+    </div>
 </body>
 
 <?php

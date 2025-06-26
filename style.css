@@ -537,7 +537,12 @@ a {
 
 /* Einde contactpagina */
 
-/* bedin recentie.php */
+/* begin recentie.php */
+
+#RecensiesTitle{
+  display: flex;
+  justify-content: center;
+}
 
 #achtergrondRecensiesPagina{
   display: flex;
@@ -545,6 +550,20 @@ a {
   justify-content: space-around;
   padding: 40px;
   gap: 40px;
+}
+
+#RecensieBox{
+  padding: 5px 40px;
+  background-color: #014421;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  margin-top: 50px;
+  width: 120px;
+  height: 50px;
+  color: white;
+  font-size: 32px;
+  font-family: 'Playfair Display';
 }
 
 .RecensiesPaginaVakjes{
