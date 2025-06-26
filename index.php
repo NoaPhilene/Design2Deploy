@@ -82,7 +82,7 @@
         </div>
         
         
-        <div id="recensieswelkom">
+        <!-- <div id="recensieswelkom">
             <?php
             try{
                 $stmt = $conn->prepare("SELECT id, bericht, schrijver FROM reccensies ORDER BY id DESC LIMIT 3");   
@@ -97,7 +97,7 @@
                 echo "Error: " . $e->getMessage();
             }
             ?>
-        </div>
+        </div> -->
 
     </div>
 
