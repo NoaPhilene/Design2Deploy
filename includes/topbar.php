@@ -10,7 +10,7 @@
 
   
   <div class="button-bar">
-    <a href="welkom.php">
+    <a href="index.php">
       <div id="button">Welkom</div>
     </a>
     <a href="diensten.php">
