@@ -15,9 +15,19 @@ body {
 }
 
 /* Welkom pagina */
-#container {
+#WelkomContainer {
   width: 100%;
   margin: 0 auto;
+  padding-bottom: 77px;
+  display: flex;
+  flex-direction: column;
+  gap: 65px;
+}
+
+#BovensBoxWelkomPagina {
+  display: flex;
+  flex-direction: column;
+  padding-top: 29px;
 }
 
 #beginTextVakWelkom p{
@@ -32,11 +42,12 @@ body {
   display: flex;
   text-align: center;
   flex-direction: column;
+  justify-content: space-between;
   color: white;
   font-size: 44px;
 
   width: auto;
-  height: 200px;
+  height: 220px;
   background-color: #014421;
 }
 
