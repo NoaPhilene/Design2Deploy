@@ -106,9 +106,21 @@ body {
   font-family: 'Playfair Display';
   font-weight: normal;
   font-size: 44px;
-  padding: 219px;
+  padding: 45px;
   text-align: center;
+  width: 865px;
 }
+
+#beginTextVakWelkom{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #014421;
+  color: #FFFFFF;
+  height: auto;
+  width: 100%;
+}
+
 
 /* werkzaamheden balk */
 #werkzaamheden{
@@ -192,9 +204,9 @@ body {
 #RecensiesBoxWelkom{
   display: flex;
   align-items: flex-start;
+  justify-content: space-evenly;
   gap: 55px;
   width: 100%;
-  justify-content: space-evenly;
 }
 
 .RecensiesVakjesWelkom {
@@ -256,7 +268,7 @@ img {vertical-align: middle;}
 .slideshow-container {
   display: flex;
   justify-content: center;
-  width: 1000px;
+  width: 100%;
   height: 400px;
   position: relative;
   margin: auto;
@@ -296,15 +308,6 @@ img {vertical-align: middle;}
 }
 
 /* einde slidshow */
-
-#beginTextVakWelkom{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #014421;
-  color: #FFFFFF;
-  height: 196px;
-}
 
 /* einde welkom pagina */
 
@@ -580,17 +583,16 @@ a {
 }
 
 #RecensieBox{
-  padding: 5px 40px;
+  padding: 9px 40px;
   background-color: #014421;
   display: flex;
   justify-content: center;
   border-radius: 10px;
   margin-top: 50px;
-  width: 120px;
-  height: 50px;
   color: white;
   font-size: 32px;
-  font-family: 'Playfair Display';
+  font-family: 'Playfair Display', sans-serif;
+  align-items: center;
 }
 
 .RecensiesPaginaVakjes{
@@ -606,7 +608,7 @@ a {
 }
 
 .RecensiesPaginaVakjes p{
-  font-family: Playfair Display;
+  font-family: 'Playfair Display', sans-serif;
   font-size: 30px;
 }
 
@@ -619,3 +621,34 @@ a {
   font-weight: bold;
 }
 /* einde recentie pagina */
+
+/* responsif maken */
+
+@media (max-width: 850px) {
+
+#beginTextVakWelkom p{
+  font-size: 35px;
+}
+
+#RecensiesBoxWelkom{
+  flex-wrap: wrap;  
+}
+
+}
+
+@media (max-width: 705px) {
+
+#beginTextVakWelkom p{
+  font-size: 20px;
+}
+
+.RecensiesVakjesWelkom p{
+  font-size: 10px;
+}
+
+#RecensiesTitle{
+  color: #FFFFFF;
+  font-size: 25px;
+}
+
+}
