@@ -39,7 +39,7 @@ include("includes/header.php");
 
             </div>
             <br>
-            <div id= SlideshowRondjes>
+            <div id= "SlideshowRondjes">
                 <a class="prev" onclick="plusSlides(-1)">❮</a>
                 <span class="dot" onclick="currentSlide(1)"></span> 
                 <span class="dot" onclick="currentSlide(2)"></span> 

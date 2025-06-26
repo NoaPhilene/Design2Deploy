@@ -149,10 +149,12 @@ img {vertical-align: middle;}
 
 #SlideshowRondjes{
   display: flex;
+  width: 489px;
+  justify-content: center;
 }
 
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0,0.2);
 }
 
 .active {
@@ -198,19 +200,18 @@ img {vertical-align: middle;}
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+  border-radius: 20px;
   user-select: none;
 }
 
-/* Positie rechter knop */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+.prev, .next, .dot {
+    position: relative;
+    z-index: 10;
 }
 
 /* als je er over heen gaat komt er een vakje om heen */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0,0.3);
 }
 
 /* einde slidshow */
