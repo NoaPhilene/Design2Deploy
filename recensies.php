@@ -15,8 +15,8 @@ include("includes/topbar.php");
 
                 foreach ($stmt->fetchAll() as $k => $v) {
                 echo "<div class='recensies'>
-                <p>{$v['bericht']}</p>
-                <p>{$v['schrijver']}</p>
+                <div id='RecensiesBericht'><p>{$v['bericht']}</p></div>
+                <div id='RecensiesSchrijver'><p>{$v['schrijver']}</p></div>
                 </div>";
             }
             } catch (PDOException $e){
