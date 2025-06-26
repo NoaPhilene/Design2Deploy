@@ -67,6 +67,7 @@ body {
   flex-direction: column;
   color: white;
   font-size: 44px;
+  text-align: left;
 
   width: auto;
   height: 300px;
@@ -532,7 +533,7 @@ a {
   gap: 40px;
 }
 
-.recensies{
+.RecensiesPaginaVakjes{
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
@@ -543,15 +544,17 @@ a {
   height: auto;
   padding: 20px;
 }
-.recensies p{
+.RecensiesPaginaVakjes p{
  font-family: Playfair Display;
  font-size: 30px;
 }
 
 #RecensiesBericht{
   padding-bottom: 25px;
+  text-align: left;
 }
 
 #RecensiesSchrijver{
   font-weight: bold;
 }
+/* einde recentie pagina */
