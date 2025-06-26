@@ -27,6 +27,97 @@ body {
   width: 930px;
 }
 
+/* werkzaamheden balk */
+#werkzaamheden{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  color: white;
+  font-size: 44px;
+
+  width: auto;
+  height: 200px;
+  background-color: #014421;
+}
+
+.werkzaamhedenknop{
+  clip-path: circle(50%);
+  background-color: white;
+  margin-top: -30px;
+  width: 150px;
+  height: 150px;
+}
+
+.werkzaamhedenknop img{
+  height: 109px;
+  width: 110px;
+  margin-top: 19px;
+}
+
+.knoppenwerkzaamheden {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* slideshow met werktijden */
+#werktijdenslideshow{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  color: white;
+  font-size: 44px;
+  text-align: left;
+
+  width: auto;
+  height: 300px;
+  background-color: #014421;
+}
+
+#werktijdenwelkom{
+  width: 300px;
+  color: black;
+  font-size: 32px;
+  margin-left: 15px;
+}
+
+#werktijdenvak{
+  background-color: #D9D9D9;
+  width: 350px;
+  height: 265px;
+  margin-top: 17px;
+  margin-left: 13px;
+}
+
+/* recensies welkom pagina */
+#recensieswelkom{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  color: white;
+  font-size: 44px;
+
+  width: auto;
+  height: 300px;
+  background-color: #014421;
+}
+
+.recensievakjeswelkom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.recensies {
+  width: 300px;
+  height: 200px;
+  background-color: #D9D9D9;
+  text-align: center;
+}
+
 /* slidshow welkom pagina boven */
 
 .mySlides {display: none;}
@@ -49,48 +140,68 @@ img {vertical-align: middle;}
 
 /* Fading animation */
 .fade {
-    animation-name: fade;
+  animation-name: fade;
   animation-duration: 1.5s;
 }
 
 @keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
+  from {opacity: .4} 
+  to {opacity: 1}
 }
 
 .slideshow-container {
-    display: flex;
-    justify-content: center;
-    width: 1000px;
-    height: 400px;
-    position: relative;
-    margin: auto;
-    overflow: hidden;
-    background-color: #d9d9d9;
+  display: flex;
+  justify-content: center;
+  width: 1000px;
+  height: 400px;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  background-color: #d9d9d9;
 }
 
 .mySlides img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* volgende en terug knop */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Positie rechter knop */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* als je er over heen gaat komt er een vakje om heen */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
 }
 
 /* einde slidshow */
 
 #beginTextVakWelkom{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #014421;
-    color: #FFFFFF;
-    height: 196px;
-}
-
-@font-face{
-  font-family: 'Playfair Display';
-  src: url('assets/font/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #014421;
+  color: #FFFFFF;
+  height: 196px;
 }
 
 /* einde welkom pagina */
@@ -232,7 +343,7 @@ a {
 
   color: white;
   font-size: 32px;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Playfair Display';
 }
 
 #introtekstcontact{
@@ -349,7 +460,7 @@ a {
   width: 150px;
   text-align: right;
   font-size: 20px;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Playfair Display';
   padding: 5px
 }
 
@@ -357,7 +468,7 @@ a {
   padding: 5px 10px;
   border: 3px solid black;
   border-radius: 5px;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Playfair Display';
   background-color: #D9D9D9;
 }
 
@@ -368,7 +479,7 @@ a {
 }
 #werkdagen{
   display: flex;
-  text-align: center;
+  text-align: left;
   flex-direction: column;
   align-items: center;
   
@@ -414,3 +525,39 @@ a {
 }
 
 /* Einde contactpagina */
+
+/* bedin recentie.php */
+
+#achtergrondRecensiesPagina{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 40px;
+  gap: 40px;
+}
+
+.RecensiesPaginaVakjes{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  background-color: #d9d9d9;
+  border: 18px solid#014421;
+  border-radius: 10px;
+  width: 560px;
+  height: auto;
+  padding: 20px;
+}
+.RecensiesPaginaVakjes p{
+ font-family: Playfair Display;
+ font-size: 30px;
+}
+
+#RecensiesBericht{
+  padding-bottom: 25px;
+  text-align: left;
+}
+
+#RecensiesSchrijver{
+  font-weight: bold;
+}
+/* einde recentie pagina */
