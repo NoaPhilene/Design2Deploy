@@ -1,5 +1,6 @@
 <?php
-include("includes/header.php");
+    include("includes/header.php");
+    include("includes/connection.php");
 ?>
 
 <body>
@@ -79,13 +80,23 @@ include("includes/header.php");
                 </div>
             </div>
         </div>
+        
+        
+        <div id="recensieswelkom">
+            <?php
+            try{
+                $stmt = $conn->prepare("SELECT id, bericht, schrijver FROM reccensies ORDER BY id DESC LIMIT 3");   
+                $stmt->execute();
 
-        <div id="recensieswelkom">Recensies
-            <div class="recensievakjeswelkom">
-                <div class="recensies"></div>
-                <div class="recensies"></div>
-                <div class="recensies"></div>
-            </div>
+                echo '<div class="recensievakjeswelkom">';
+                    echo '<p>' . htmlspecialchars($recensie['bericht']) . '</p>';
+                    echo '<p>' . htmlspecialchars($recensie['schrijver']) . '</p>';
+                echo '</div>';
+
+            }catch (PDOException $e){
+                echo "Error: " . $e->getMessage();
+            }
+            ?>
         </div>
 
     </div>
