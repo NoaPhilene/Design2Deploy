@@ -82,22 +82,24 @@
         </div>
         
         
-        <!-- <div id="recensieswelkom">
+        <div id="RecensiesWelkom">
             <?php
             try{
                 $stmt = $conn->prepare("SELECT id, bericht, schrijver FROM reccensies ORDER BY id DESC LIMIT 3");   
                 $stmt->execute();
 
-                echo '<div class="recensievakjeswelkom">';
-                    echo '<p>' . htmlspecialchars($recensie['bericht']) . '</p>';
-                    echo '<p>' . htmlspecialchars($recensie['schrijver']) . '</p>';
-                echo '</div>';
+                foreach ($stmt->fetchAll() as $k => $v) {
+                    echo "<div class='RecensiesVakjesWelkom'>
+                        <div id='RecensiesBericht'><p>{$v['bericht']}</p></div>
+                        <div id='RecensiesSchrijver'><p>{$v['schrijver']}</p></div>
+                    </div>";
+                }
 
             }catch (PDOException $e){
                 echo "Error: " . $e->getMessage();
             }
             ?>
-        </div> -->
+        </div>
 
     </div>
 

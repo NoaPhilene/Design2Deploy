@@ -19,8 +19,8 @@
 
                 foreach ($stmt->fetchAll() as $k => $v) {
                 echo "<div class='RecensiesPaginaVakjes'>
-                <div id='RecensiesBericht'><p>{$v['bericht']}</p></div>
-                <div id='RecensiesSchrijver'><p>{$v['schrijver']}</p></div>
+                    <div id='RecensiesBericht'><p>{$v['bericht']}</p></div>
+                    <div id='RecensiesSchrijver'><p>{$v['schrijver']}</p></div>
                 </div>";
             }
             } catch (PDOException $e){
