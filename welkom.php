@@ -66,7 +66,7 @@ include("includes/header.php");
         <br>
 
         <div id="werktijdenslideshow">
-            <div id="werktijdenvak">
+            <div class="werktijdenvak">
                 <div id="werktijdenwelkom">
                     Maandag: 7:00-16:00
                     Dinsdag: 7:00-16:00
