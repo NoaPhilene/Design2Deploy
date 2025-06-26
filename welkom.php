@@ -76,6 +76,7 @@ include("includes/header.php");
                     Zaterdag: Op afspraak
                     Zondag: Gesloten
                 </div>
+                <div id="werktijdenfoto1"><img src="assets/fotos/tuinFoto3.webp"></div>
             </div>
         </div>
         <br>
