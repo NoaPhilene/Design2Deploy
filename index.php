@@ -3,13 +3,13 @@ include("includes/header.php");
 ?>
 
 <body>
-    <div id="container">
+    <?php
+        include("includes/topbar.php");
+    ?>
 
-        <?php
-            include("includes/topbar.php");
-        ?>
-    
-        <div id="achtergrondWelkomPagina">
+    <div id="WelkomContainer">
+
+        <div id="BovensBoxWelkomPagina">
 
             <div class="slideshow-container">
 
@@ -54,8 +54,7 @@ include("includes/header.php");
         <div id="beginTextVakWelkom">
             <p>Welkom bij de website van Hendrik Hogendijk, hovenier in de regio Utrecht, Zeist en de Bilt.</p>
         </div>
-        <!-- tijdelijk br -->
-        <br>
+       
         </div>
 
         <div id="werkzaamheden">Werkzaamheden
@@ -66,7 +65,6 @@ include("includes/header.php");
                 <div class="werkzaamhedenknop"><a href="diensten.php"><img src="assets/fotos/icoonzwemvijvers.webp"></a></div>
             </div>
         </div>
-        <br>
 
         <div id="werktijdenslideshow">
             <div id="werktijdenvak">
@@ -81,7 +79,6 @@ include("includes/header.php");
                 </div>
             </div>
         </div>
-        <br>
 
         <div id="recensieswelkom">Recensies
             <div class="recensievakjeswelkom">
@@ -90,7 +87,6 @@ include("includes/header.php");
                 <div class="recensies"></div>
             </div>
         </div>
-        <br>
 
     </div>
 
