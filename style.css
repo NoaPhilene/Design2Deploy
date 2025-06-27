@@ -337,7 +337,7 @@ a {
 #box1{
   display: flex;
   width: 100%;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 #hendrikrond{
   clip-path: circle(50%);
@@ -345,6 +345,7 @@ a {
   width: 22vw;
   height: auto;
   margin-top: 50px;
+  margin-right: 50px;
 }
 #contactformulier{
   display: flex;
@@ -359,7 +360,10 @@ a {
   margin-top: 50px;
   border-radius: 10px;
   height: auto;
-  width: 60vw;
+  width: auto;
+  margin-left: 50px;
+  padding-left: 100px;
+  padding-right: 180px;
 }
 #formulierinhoud {
   display: flex;
