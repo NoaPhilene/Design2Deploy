@@ -17,14 +17,10 @@
                 $stmt = $conn->prepare("SELECT id, bericht, schrijver FROM reccensies");   
                 $stmt->execute();
 
-                
                 foreach ($stmt->fetchAll() as $k => $v) {
-                $bericht = htmlspecialchars($v['bericht']);
-                $schrijver = htmlspecialchars($v['schrijver']);
-
                 echo "<div class='RecensiesPaginaVakjes'>
-                    <div class='RecensiesBericht'><p>$bericht</p></div>
-                    <div class='RecensiesSchrijver'><p>$schrijver</p></div>
+                    <div id='RecensiesBericht'><p>{$v['bericht']}</p></div>
+                    <div id='RecensiesSchrijver'><p>{$v['schrijver']}</p></div>
                 </div>";
             }
             } catch (PDOException $e){
