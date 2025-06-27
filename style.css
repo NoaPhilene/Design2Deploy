@@ -286,9 +286,9 @@ img {vertical-align: middle;}
 }
 
 #logo{
-  width: 200px;
-  max-width: 100%;
+  max-width: 130%;
   height: auto;
+  margin-top: -20px;
 }
 
 .button-bar{
