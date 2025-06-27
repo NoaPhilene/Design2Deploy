@@ -648,6 +648,10 @@ a {
 #RecensiesBoxWelkom{
   flex-wrap: wrap;  
 }
+
+.RecensiesPaginaVakjes p {
+font-size: 20px;
+}
 /* einde welkom pagina */
 
 }
@@ -666,6 +670,18 @@ a {
 #RecensiesTitle{
   color: #FFFFFF;
   font-size: 25px;
+}
+
+.RecensiesPaginaVakjes p {
+font-size: 15px;
+}
+
+#RecensieBox {
+font-size: 23px;
+}
+
+.RecensiesPaginaVakjes {
+  border: 11px solid #014421;
 }
 /* einde welkom pagina */
 
