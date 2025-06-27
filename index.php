@@ -94,8 +94,10 @@
 
                     foreach ($stmt->fetchAll() as $k => $v) {
                         echo "<div class='RecensiesVakjesWelkom'>
+                            <a href='recensies.php'>
                             <div id='RecensiesBericht'><p>{$v['bericht']}</p></div>
                             <div id='RecensiesSchrijver'><p>{$v['schrijver']}</p></div>
+                            </a>
                         </div>";
                     }
 
