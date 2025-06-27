@@ -345,7 +345,7 @@ a {
   width: 22vw;
   height: auto;
   margin-top: 50px;
-  margin-right: 50px;
+  margin-left: 50px;
 }
 #contactformulier{
   display: flex;
@@ -362,8 +362,6 @@ a {
   height: auto;
   width: auto;
   margin-left: 50px;
-  padding-left: 100px;
-  padding-right: 180px;
 }
 #formulierinhoud {
   display: flex;
