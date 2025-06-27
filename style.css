@@ -212,16 +212,26 @@ img {vertical-align: middle;}
   display: flex;
   justify-content: space-between;
   align-items: center; 
-  width: auto;
-  height: 160px;
+  width: 100%;
+  height: auto;
   background-color: #014421;
-  display: flex;
   padding: 5px 10px;
+  flex-wrap: flex;
+  
+}
+
+@media (max-width: 480px) {
+  .header {
+     padding: 20px 15px;
+  }
+   footer {
+    padding: 10px 15px;
+}
 }
 
 #titel{
   color: white;
-  font-size: 40px;
+  font-size: 2.2vw;
   flex: 1;
   text-align: center;
   align-items: center;
@@ -238,7 +248,7 @@ img {vertical-align: middle;}
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
+  /* position: absolute; */
 }
 
 #logo{
@@ -252,16 +262,16 @@ img {vertical-align: middle;}
   justify-content: center;
   align-items: center; 
   width: auto;
-  height: 50px;
+  height: 20%;
   background-color: #013d1d;
   display: flex;
   padding: 5px 10px;
-  gap: 100px;
+  gap: 5vw;
 }
 
 #button{
-  width: 150px;
-  height: 30px;
+  width: 8vw;
+  height: 2vw;
   border: 1px solid black;
   background-color: #013319;
   color: white;
@@ -269,16 +279,20 @@ img {vertical-align: middle;}
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+#button:hover {
+  transform: scale(1.2); 
 }
 /*Einde topbar*/
 
 /*Begin footer*/
-/*begin*/
 footer {
   background-color: #014421;
   color: rgb(255, 255, 255);
   padding: 20px;
-  width: auto;
+  width: 100%;
 }
 
 .column {
@@ -295,14 +309,19 @@ footer {
   clear: both;
 }
 
+h2{
+  font-weight: 100;
+  font-size: 1.1vw;
+}
+
 h3{
   font-weight: 100;
-  font-size: 18px;
+  font-size: 1vw;
 }
 
 h4{
   font-weight: 100;
-  font-size: 21px;
+  font-size: 1.2vw;
 }
 
 .footer-end{
@@ -312,7 +331,7 @@ h4{
 }
 
 p{
-  font-size: 18px;
+  font-size: 0.9vw;
 }
 
 a {
