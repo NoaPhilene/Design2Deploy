@@ -115,12 +115,24 @@ body {
   margin-left: 13px;
 }
 
-.werktijdenfotos{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 20px;
+.werktijdenflex {
+  display: flex;
+  justify-content: center; /* centreren in de container */
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.werktijdenfotos {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.werktijdenfotos img {
+  border-radius: 8px;
+  height: 300px;
+  width: 500px;
+  object-fit: fill;
 }
 
 /* recensies welkom pagina */
@@ -760,3 +772,14 @@ a {
   }
 }
 /* einde contactpagina responsive */
+
+/* welkompagina responsive */
+@media (max-width: 700px){
+  .knoppenwerkzaamheden{
+    max-width: 150px;
+    width: auto;
+    max-height: 150px;
+    height: auto;
+  }
+}
+/* einde welkompagina responsive */
