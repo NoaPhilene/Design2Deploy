@@ -78,6 +78,8 @@
                     Zaterdag: Op afspraak
                     Zondag: Gesloten
                 </div>
+                <div class="werktijdenfotos"><img src="assets/fotos/tuinFoto4.webp"></div>
+                <div class="werktijdenfotos"><img src="assets/fotos/tuinFoto6.webp"></div>
             </div>
         </div>
         

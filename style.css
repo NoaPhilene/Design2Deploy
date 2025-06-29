@@ -115,6 +115,14 @@ body {
   margin-left: 13px;
 }
 
+.werktijdenfotos{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+}
+
 /* recensies welkom pagina */
 
 #RecensiesWelkom{
@@ -344,10 +352,10 @@ footer {
   clear: both;
 }
 
-h2{
+/* h2{
   font-weight: 100;
   font-size: 1.1vw;
-}
+} */
 
 h3{
   font-weight: 100;
@@ -439,7 +447,6 @@ a {
   height: auto;
   width: 90%;
   max-width: 783px;
-  margin-right: 10px;
   padding: 5px;
 }
 #formulierinhoud {
@@ -475,7 +482,7 @@ a {
 #hendrikvierkant{
   max-width: 350px;
   width: 90%;
-  max-height: 188px;
+  max-height: 218px;
   border-radius: 10px;
   margin-top: 52px;
 }
@@ -486,12 +493,14 @@ a {
   
   background-color: #D9D9D9;
   border: 20px solid #014421;
+  font-size: 24px;
 
   margin-top: 50px;
   border-radius: 10px;
-  height: 150px;
+  height: auto;
   width: 800px;
 }
+
 #gegevens{
   text-align: left;
   padding: 15px;
@@ -670,6 +679,7 @@ a {
 
 }
 
+/* contactpagina responsive */
 @media (max-width: 1320px) {
   #introtekstcontact{
     width: auto;
@@ -680,13 +690,57 @@ a {
   #hendrikvierkant{
     width: auto;
     height: auto;
+    max-width: 350px;
+    max-height: 218px;
+  }
+
+  #werkdagen{
+    width: auto;
+    height: auto;
+    max-width: 350px;
+    max-height: 218px;
+     font-size: 21px;
+  }
+
+  #hendrikrond{
+    max-width: 350px;
+    width: auto;
+    max-height: 400px;
+    height: auto;
+  }
+
+  #gegevenshendrik{
+    max-width: 800px;
+    width: auto;
+    height: auto;
+    font-size: 2vw;
+  }
+
+  #box1 {
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+  }
+    #box2{
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+  }
+    #box3{
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
   }
 }
 
 @media (max-width: 534px){
-  #box1{
-    flex-wrap: wrap;
+    #gegevenshendrik {
+    font-size: 7px;
+  }
+  .google-maps{
+    max-width: 800px;
     width: auto;
+    max-height: 250px;
     height: auto;
   }
 }
@@ -700,4 +754,9 @@ a {
     text-align: left;
     align-items: flex-start;
   }
+
+    .gegevenshendrik h2 {
+    font-size: 1.1rem;
+  }
 }
+/* einde contactpagina responsive */
