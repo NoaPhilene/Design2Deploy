@@ -525,6 +525,8 @@ a {
   width: 90%;
   max-width: 783px;
   padding: 5px;
+  padding-left: 100px;
+    padding-right: 109px;
 }
 #formulierinhoud {
   display: flex;
@@ -755,6 +757,21 @@ a {
   font-size: 25px;
 }
 
+#topbarmanager{
+  background-color: #014421;
+  color: white;
+  width: auto;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#kopteksttbm{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* responsif maken */
 
 @media (max-width: 850px) {
@@ -867,6 +884,11 @@ font-size: 20px;
   #formnamen, #formvelden {
     text-align: left;
     align-items: flex-start;
+  }
+  
+  #contactformulier{
+    padding-right: 0px;
+    padding-left: 0px;
   }
 
     .gegevenshendrik h2 {
