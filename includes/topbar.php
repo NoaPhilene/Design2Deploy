@@ -12,15 +12,15 @@
   <div class="button-bar">
     
     <a href="index.php">
-      <div id="button"><h4>Welkom</h4></div>
+      <div class="button"><div id="buttonbar-tekst">Welkom</div></div>
     </a>
     <a href="diensten.php">
-      <div id="button"><h4>Diensten</h4></div>
+      <div class="button"><div id="buttonbar-tekst">Diensten</div></div>
     </a>
     <a href="recensies.php">
-      <div id="button"><h4>Recensies</h4></div>
+      <div class="button"><div id="buttonbar-tekst">Recensies</div></div>
     </a>
     <a href="contact.php">
-      <div id="button"><h4>Contact</h4></div>
+      <div class="button"><div id="buttonbar-tekst">Contact</div></div>
     </a>
 </div>

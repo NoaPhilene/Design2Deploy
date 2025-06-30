@@ -1,5 +1,6 @@
 <?php
 include("includes/header.php");
+include("includes/connection.php");
 include("includes/topbar.php");
 ?>
 
@@ -9,23 +10,26 @@ include("includes/topbar.php");
     <div id="introtekstcontact">Ik streef ernaar om constant in contact te staan met onze klanten totdat de klus geklaard is. Als u vragen of speciale verzoeken heeft, stuur ons dan een bericht. Voor een vrijblijvende offerte kunt u contact met ons opnemen wanneer het u uitkomt. Wij zijn u graag van dienst!</div>
     
     <div id="box1">
-        <div id="contactformulier">
-        <h2>Contactformulier</h2>
-            <div id="formulierinhoud">
-            <div id="formnamen">
-                <div>E-mail:</div>
-                <div>Telefoonnummer:</div>
-                <div>Opmerking:</div>
-            </div>
-            <div id="formvelden">
-                <input type="email" name="email" required placeholder="E-mail">
-                <input type="tel" name="telefoonnummer" required placeholder="Telefoonnummer">
-                <textarea cols="26" name="opmerking" rows="4"placeholder="Opmerking"></textarea>
 
-                <input type="submit" value="Verstuur">
+        <form action="includes/contact-insert.php" method="POST">
+            <div id="contactformulier">
+            <h2>Contactformulier</h2>
+                <div id="formulierinhoud">
+                <div id="formnamen">
+                    <div>E-mail:</div>
+                    <div>Telefoonnummer:</div>
+                    <div>Opmerking:</div>
+                </div>
+                <div id="formvelden">
+                    <input type="email" name="email" required placeholder="E-mail">
+                    <input type="tel" name="telefoonnummer" required placeholder="Telefoonnummer">
+                    <textarea cols="26" name="opmerking" rows="4"placeholder="Opmerking"></textarea>
+
+                    <input type="submit" value="Verstuur">
+                </div>
+                </div>
             </div>
-            </div>
-        </div>
+        </form>
         <img src="assets/fotos/hendrik1.webp" alt="hendrik1" id="hendrikrond">
     </div>
 
