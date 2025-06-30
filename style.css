@@ -595,12 +595,13 @@ a {
   position: relative;
 }
 
-.google-map iframe {
-  height: 100%;
+/* .google-map iframe {
   width: 100%;
-  left: 0;
-  top: 0;
-  position: absolute;
+  height: 600px;
+} */
+#googlemap{
+  width: 800px;
+  height: 400px;
 }
 
 /* Einde contactpagina */
@@ -750,7 +751,7 @@ a {
     font-size: 7px;
   }
   .google-maps{
-    max-width: 800px;
+    max-width: 100%;
     width: auto;
     max-height: 250px;
     height: auto;
