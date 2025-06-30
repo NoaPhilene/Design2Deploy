@@ -735,9 +735,6 @@ a {
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
-  flex-wrap: wrap;
-  gap: 20px;
-  width: 50%;
 }
 
 .RecensiesManagerVakjes{
@@ -748,9 +745,6 @@ a {
   border: 18px solid #014421;
   border-radius: 10px;
   width: 400px;
-  border: 18px solid#014421;
-  border-radius: 10px;
-  width: 38%;
   min-width: 230px;
   height: auto;
   padding: 20px;
