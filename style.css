@@ -636,7 +636,7 @@ a {
 }
 /* einde recentie pagina */
 
-/* magager.php */
+/* magager-recensies.php */
 
 #achtergrondManager{
   display: flex;
@@ -645,9 +645,9 @@ a {
 
 #managerBox{
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
-  width: 50%;
 }
 
 .RecensiesManagerVakjes{
@@ -655,9 +655,9 @@ a {
   flex-wrap: wrap;
   align-content: space-between;
   background-color: #d9d9d9;
-  border: 18px solid#014421;
+  border: 18px solid #014421;
   border-radius: 10px;
-  width: 38%;
+  width: 400px;
   min-width: 230px;
   height: auto;
   padding: 20px;
