@@ -24,28 +24,52 @@ body{
     margin-left: 150px;
     background-color: #014421;
     border-radius: 10px;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+
 }
 #tuinaanleg{
     height: 250px;
     width: 450px;
-    margin-top: -250px;
+    margin-top: 24px;
     margin-left: 790px;
     background-color: #014421;
     border-radius: 10px;
+    color: white;
+    font-size: 30px;
+    text-align: center;
 }
 #tuinonderhoud{
     height: 250px;
     width: 450px;
-    margin-top: 300px;
+    margin-top: 50px;
     margin-left: 150px;
     background-color: #014421;
     border-radius: 10px;
+    color: white;
+    font-size: 30px;
+    text-align: center;
 }
 #zwemvijvers{
     height: 250px;
     width: 450px;
-    margin-top: 300px;
+    margin-top:-250px;
     margin-left: 790px;
     background-color: #014421;
     border-radius: 10px;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+#afgelopen{
+    height: 57px;
+    width: 150px;
+    margin-top:90px;
+    margin-left: 620px;
+    background-color: #014421;
+    border-radius: 10px;
+    color: white;
+    font-size: 25px;
+    text-align: center;
 }
