@@ -729,3 +729,66 @@ a {
 }
 
 }
+
+/*Begin van Welkoms tekst vak*/
+#Welkoms-vak {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #014421;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+  gap: 2vw;
+}
+
+#Welkoms-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#intro-tekstvak {
+  flex: 1 1 300px;
+  background-color: #D9D9D9;
+  padding: 1vw;
+}
+
+#intro-tekst {
+  font-size: 1.5vw;
+  line-height: 1.5;
+}
+
+#Welkoms-fotos {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  align-items: center;
+}
+
+#Welkoms-fotos img {
+  width: 60%;
+  max-width: 600px;
+  height: auto;
+}
+/*Einde van Welkoms tekst vak*/
+
+/*Begin van welkoms tekst vak repsonsive maken*/
+@media (max-width: 768px) {
+  #Welkoms-vak {
+    flex-direction: column;
+    padding: 5%;
+  }
+
+  #Welkoms-fotos img {
+    width: 60%;
+    padding: 4%;
+  }
+
+  #intro-tekst {
+    font-size: 4vw;
+  }
+}
+/*Einde van welkoms tekst vak repsonsive maken*/
