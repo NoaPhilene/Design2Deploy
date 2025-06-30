@@ -735,6 +735,8 @@ a {
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
+  flex-wrap: wrap;
+  gap: 20px;
   width: 50%;
 }
 

@@ -1,8 +1,10 @@
 <div class="header">
 
+  <a href="manager-recensies.php">
   <div class="logo_cirkel">
-    <img src="assets/fotos/logo.png" id="logo"> 
+      <img src="assets/fotos/logo.png" id="logo"> 
     </div>
+  </a>
 
     <div id="titel">Hendrik Hogendijk Hoveniers</div>
 
