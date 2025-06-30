@@ -126,6 +126,7 @@ body {
   display: flex;
   flex-direction: row;
   gap: 10px;
+  width: 400px;
 }
 
 .werktijdenfotos img {
@@ -461,7 +462,7 @@ a {
 
 /* Contact pagina */
 #backgroundcontact{
-  height: 1385px;
+  height: auto;
   background-color: #D9D9D9;
   display: flex;
   flex-direction: column;
@@ -619,6 +620,7 @@ a {
   display: flex;
   width: 100%;
   justify-content: space-evenly;
+  margin-bottom: 50px;
 }
 #werkdagen{
   display: flex;
@@ -895,5 +897,3 @@ font-size: 23px;
   border: 11px solid #014421;
 }
 /* einde welkom pagina */
-
-}
