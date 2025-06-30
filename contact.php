@@ -21,9 +21,9 @@ include("includes/topbar.php");
                     <div>Opmerking:</div>
                 </div>
                 <div id="formvelden">
-                    <input type="email" name='contact-email' required>
-                    <input type="tel" name='contact-telefoonnummer' required>
-                    <textarea name='contact-opmerking' cols="26" rows="4"></textarea>
+                    <input type="email" name="email" required placeholder="E-mail">
+                    <input type="tel" name="telefoonnummer" required placeholder="Telefoonnummer">
+                    <textarea cols="26" name="opmerking" rows="4"placeholder="Opmerking"></textarea>
 
                     <input type="submit" value="Verstuur">
                 </div>
@@ -41,7 +41,7 @@ include("includes/topbar.php");
             <div id="gegevensrijen">
                 <div class="gegevensrij">
                     <label for="telefoon">Telefoonnummer:</label>
-                    <div class="gegevensveld" id="telefoon">06 98765432</div>
+                    <div class="gegevensveld" id="telefoon"><a href="tel:0698765432">06 98765432</a></div>
                 </div>
                 <div class="gegevensrij">
                     <label for="email">E-mail:</label>
@@ -65,7 +65,9 @@ include("includes/topbar.php");
             </div>
         </div>
         <div class="google-maps">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23316.052174134664!2d5.165547477687677!3d52.101606201091116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c669b4272488a7%3A0xb6f7ab211abaaf5!2sAmateur%20Gardeners%20Association%20Het%20Kloosterpark!5e0!3m2!1sen!2snl!4v1750835807115!5m2!1sen!2snl" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div id="googlemap"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23316.052174134664!2d5.165547477687677!3d52.101606201091116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c669b4272488a7%3A0xb6f7ab211abaaf5!2sAmateur%20Gardeners%20Association%20Het%20Kloosterpark!5e0!3m2!1sen!2snl!4v1750835807115!5m2!1sen!2snl"
+                width="100%" height="250px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe></div>
         </div>
     </div>
     
