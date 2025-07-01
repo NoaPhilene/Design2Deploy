@@ -811,16 +811,20 @@ a {
   color: white;
   width: auto;
   height: 250px;
-  display: flex;
   justify-content: center;
   align-items: center;
 
 }
 #kopteksttbm{
-    display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   font-size: 25px;
+}
+.knopbartbm{
+  background-color: #013d1d;
+  width: auto;
+  height: 300px;
 }
 
 /* responsif maken */
