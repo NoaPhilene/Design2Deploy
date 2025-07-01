@@ -1,7 +1,7 @@
 <?php 
 include("includes/connection.php");
-
 include("includes/header.php");
+include("includes/topbarmanager.php");
 ?>
 
 <body>
@@ -37,7 +37,7 @@ include("includes/header.php");
                     <div id="opslaanKnop-recensies">
                         <button type="submit" class="opslaan" name="submit">Opslaan</button>
                     </div>
-                    
+
                 </div>  
                     
             </form>

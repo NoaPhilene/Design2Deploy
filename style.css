@@ -1053,7 +1053,6 @@ a {
   border-radius: 6px;
 }
 
-=======
 /* topbarmanager */
 #topbarmanager{
   background-color: #0d4422;
@@ -1396,17 +1395,17 @@ font-size: 20px;
     max-height: 150px;
     height: auto;
   }
-}
 /* einde welkompagina responsive */
 .RecensiesPaginaVakjes p {
 font-size: 15px;
 }
 
 #RecensieBox {
-font-size: 23px;
+  font-size: 23px;
 }
 
 .RecensiesPaginaVakjes {
   border: 11px solid #014421;
+}
 }
 /* einde welkom pagina */
