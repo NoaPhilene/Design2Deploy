@@ -3,7 +3,7 @@
     include("includes/connection.php");
 ?>
 
-    <div id='achtergrondManager'>
+    <div id='achtergrondManagerContact'>
         <div id='managerBox'>
 
             <?php
@@ -13,9 +13,26 @@
 
                     foreach ($stmt->fetchAll() as $k => $v) {
                     echo "<div class='contactManagerVakjes'>
-                        <div id='emailManagerContact'><p>E-mail: {$v['email']}</p></div>
-                        <div id='telefoonnummerManagerContact'><p>telefoonnummer: {$v['telefoonnummer']}</p></div>
-                        <div id='opmerkingManagerContact'><p>Bericht: {$v['opmerking']}</p></div>
+
+                        <a href ='mailto:{$v['email']}'><div id='emailManagerContact'>
+                            <p>E-mail: {$v['email']}</p>
+                        </div></a>
+
+                        <a href='tel:{$v['telefoonnummer']}'><div id='telefoonnummerManagerContact'>
+                            <p>telefoonnummer: {$v['telefoonnummer']}</p>
+                        </div></a>
+
+                        <div id='opmerkingManagerContact'>
+                            <p>Bericht: {$v['opmerking']}</p>
+                        </div>
+
+                        <div id='deleteBoxContact'>
+                            <form action='includes/delete-contact.php' method='POST' onsubmit=\"return confirm('Weet je zeker dat je dit wilt verwijderen?');\">
+                                <input type='hidden' name='id' value='" . htmlspecialchars($v['id']) . "'>
+                                <button type='submit' id=deleteKnopContact>Verwijder</button>
+                            </form>
+                        </div>
+
                     </div>";
                 }
                 } catch (PDOException $e){
@@ -28,3 +45,7 @@
     </div>
 
 </body>
+
+<?php
+    include("includes/footer.php");
+?>

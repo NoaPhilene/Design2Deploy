@@ -21,9 +21,9 @@ include("includes/topbar.php");
                         <div>Opmerking:</div>
                     </div>
                     <div id="formvelden">
-                        <input type="email" name="email" required placeholder="E-mail">
-                        <input type="tel" name="telefoonnummer" required placeholder="Telefoonnummer">
-                        <textarea cols="26" name="opmerking" rows="4"placeholder="Opmerking"></textarea>
+                        <input type="email" name="contact-email" required placeholder="E-mail">
+                        <input type="tel" name="contact-telefoonnummer" required placeholder="Telefoonnummer">
+                        <textarea cols="26" name="contact-opmerking" rows="4"placeholder="Opmerking"></textarea>
 
                         <input type="submit" value="Verstuur">
                     </div>
