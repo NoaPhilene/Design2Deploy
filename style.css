@@ -886,6 +886,9 @@ a {
 #achtergrondManager{
   display: flex;
   flex-wrap: wrap;
+  padding: 35px;
+  justify-content: center;
+  gap: 20px;
 }
 
 #managerBox{
@@ -893,6 +896,7 @@ a {
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
+  padding: 20px;
 }
 
 .RecensiesManagerVakjes{
@@ -902,7 +906,7 @@ a {
   background-color: #d9d9d9;
   border: 18px solid #014421;
   border-radius: 10px;
-  width: 400px;
+  width: 473px;
   min-width: 230px;
   height: auto;
   padding: 20px;
@@ -911,8 +915,145 @@ a {
 .RecensiesManagerVakjes p{
   font-family: 'Playfair Display', sans-serif;
   font-size: 25px;
+  width: 495px;
 }
 
+#NieuweRecensieKnop{
+  background-color: #024622;
+  color: #D9D9D9;
+  padding: 18px;
+  width: 166px;
+  border-radius: 6px;
+  font-size: 25px;
+  border: 10px solid #012c16;
+}
+/* einde manager-recensie pagina */
+
+/* nieuwe recensie pagina */
+
+#achtergrondNew{
+  display: flex;
+  height: auto;
+  justify-content: space-evenly;
+  padding: 30px;
+}
+
+#invulveldenBoxNewRecensie{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: auto;
+  width: 658px;
+  border: 8px solid #012c16;
+  border-radius: 50px;
+  padding: 40px;
+}
+
+#RecensieNewInfo, #opslaanKnop-recensies{
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 20px;
+}
+
+#RecensieNewInfo p{
+  text-align: center;
+  font-size: 33px;
+  font-weight: bold;
+  color: #000000;
+  width: 364px;
+}
+
+.formulier-rij-recensie {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.formulier-rij-recensie p {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000000;
+  width: 334px;
+  padding-right: 10px;
+}
+
+#schrijver-recensies {
+  background-color: #D9D9D9;
+  border: 4px solid #012c16;
+  font-size: 16px;
+  padding: 5px;
+  width: 300px;
+  height: 20px;
+  border-radius: 10px;
+  padding-top: 10px;
+}
+
+#bericht-recensies {
+  background-color: #D9D9D9;
+  border: 4px solid #012c16;
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.opslaan{
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  color: #ffffff; 
+  border: 3px solid #012c16;
+  border-radius: 10px;
+  padding: 9px;
+  background-color: #024622;
+}
+
+/* manager-contact.php */
+
+#achtergrondManagerContact{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 35px;
+  justify-content: center;
+}
+
+#emailManagerContact, #opmerkingManagerContact{
+  padding-right: 85px;
+}
+
+.contactManagerVakjes{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  background-color: #d9d9d9;
+  border: 18px solid #014421;
+  border-radius: 10px;
+  width: 400px;
+  min-width: 250px;
+  height: auto;
+  min-height: 130px;
+  padding: 20px;
+}
+
+.contactManagerVakjes p{
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+#deleteBox{
+  padding-top: 20px;
+}
+
+#deleteKnop{
+  background-color: #013319;
+  color: #D9D9D9;
+  padding: 6px;
+  width: 90px;
+  border-radius: 6px;
+}
+
+=======
 /* topbarmanager */
 #topbarmanager{
   background-color: #0d4422;
@@ -990,6 +1131,21 @@ font-size: 20px;
 }
 /* einde welkom pagina */
 
+/* niewe reactie pagina */
+
+#invulveldenBoxNewRecensie {
+  width: 530px;
+  flex-wrap: wrap;
+}
+
+.formulier-rij-recensie {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.formulier-rij-recensie p {
+    justify-content: center;
+}
 }
 
 @media (max-width: 705px) {
@@ -1008,6 +1164,48 @@ font-size: 20px;
   font-size: 25px;
 }
 
+/* niewe reactie pagina */
+
+#RecensieNewInfo p {
+  font-size: 25px;
+  width: 250px;
+}
+
+#invulveldenBoxNewRecensie {
+  padding: 1px;
+}
+
+.formulier-rij-recensie p {
+  font-size: 20px;
+}
+
+.opslaan {
+  width: 123px;
+  height: 42px;
+  font-size: 17px;
+  padding: 4px;
+}
+
+#schrijver-recensies {
+  width: 270px;
+  height: 18px;
+}
+
+#bericht-recensies {
+  width: 260px;
+}
+
+#achtergrondNew {
+  justify-content: center;
+}
+
+/* manager-contact */
+
+.contactManagerVakjes {
+  width: 279px;
+  border: 10px solid #014421;
+}
+
 .werkzaamhedenknop img {
   height: 80px;
   width: 89px;
@@ -1021,7 +1219,7 @@ font-size: 20px;
     width: 150px;
     height: 120px;
 }
-
+  
 }
 
 /*Begin van Welkoms tekst vak*/
@@ -1176,7 +1374,17 @@ font-size: 20px;
     font-size: 1.1rem;
   }
 
-  
+
+  /* manager recensies pagina */
+
+  .RecensiesManagerVakjes{
+    width: 289px;
+  }
+
+  .RecensiesManagerVakjes p{
+    width: 309px;
+  }
+
 }
 /* einde contactpagina responsive */
 
