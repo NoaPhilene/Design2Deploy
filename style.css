@@ -755,6 +755,29 @@ a {
   font-size: 25px;
 }
 
+/* manager-contact.php */
+
+#emailManagerContact{
+  padding-right: 85px;
+}
+
+.contactManagerVakjes{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  background-color: #d9d9d9;
+  border: 18px solid #014421;
+  border-radius: 10px;
+  width: 400px;
+  min-width: 230px;
+  height: auto;
+  padding: 20px;
+}
+
+#opmerkingManagerContact{
+  padding-right: 85px;
+}
+
 /* responsif maken */
 
 @media (max-width: 850px) {

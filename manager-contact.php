@@ -1,4 +1,10 @@
-<div id='managerBox'>
+<?php
+    include("includes/header.php");
+    include("includes/connection.php");
+?>
+
+    <div id='achtergrondManager'>
+        <div id='managerBox'>
 
             <?php
                 try{
@@ -6,10 +12,10 @@
                     $stmt->execute();
 
                     foreach ($stmt->fetchAll() as $k => $v) {
-                    echo "<div class='RecensiesManagerVakjes'>
-                        <div id='emailOverzicht'><p>{$v['email']}</p></div>
-                        <div id='telefoonnummerOverzicht'><p>{$v['telefoonnummer']}</p></div>
-                        <div id='opmerking-overzicht'><p>{$v['opmerking']}</p></div>
+                    echo "<div class='contactManagerVakjes'>
+                        <div id='emailManagerContact'><p>E-mail: {$v['email']}</p></div>
+                        <div id='telefoonnummerManagerContact'><p>telefoonnummer: {$v['telefoonnummer']}</p></div>
+                        <div id='opmerkingManagerContact'><p>Bericht: {$v['opmerking']}</p></div>
                     </div>";
                 }
                 } catch (PDOException $e){
@@ -17,5 +23,8 @@
                 }
 
             ?>
-
         </div>
+
+    </div>
+
+</body>
