@@ -95,15 +95,22 @@
         </div>
 
         <div id="werktijdenslideshow">
-            <div id="werktijdenvak">
-                <div id="werktijdenwelkom">
-                    Maandag: 7:00-16:00
-                    Dinsdag: 7:00-16:00
-                    Woensdag: 7:00-16:00
-                    Donderdag: 7:00-16:00
-                    Vrijdag: 7:00-16:00
-                    Zaterdag: Op afspraak
+            <div class="werktijdenflex">
+                <div id="werktijdenvak">
+                    <div id="werktijdenwelkom">
+                    Maandag: 7:00-16:00<br>
+                    Dinsdag: 7:00-16:00<br>
+                    Woensdag: 7:00-16:00<br>
+                    Donderdag: 7:00-16:00<br>
+                    Vrijdag: 7:00-16:00<br>
+                    Zaterdag: Op afspraak<br>
                     Zondag: Gesloten
+                    </div>
+                </div>
+
+                <div class="werktijdenfotos">
+                    <img src="assets/fotos/tuinFoto4.webp">
+                    <img src="assets/fotos/tuinFoto6.webp">
                 </div>
             </div>
         </div>
@@ -121,8 +128,10 @@
 
                     foreach ($stmt->fetchAll() as $k => $v) {
                         echo "<div class='RecensiesVakjesWelkom'>
+                            <a href='recensies.php'>
                             <div id='RecensiesBericht'><p>{$v['bericht']}</p></div>
                             <div id='RecensiesSchrijver'><p>{$v['schrijver']}</p></div>
+                            </a>
                         </div>";
                     }
 
