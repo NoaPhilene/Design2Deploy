@@ -89,7 +89,7 @@ body {
 /* slideshow met werktijden */
 #werktijdenslideshow{
   display: flex;
-  text-align: center;
+
   flex-direction: column;
   color: white;
   font-size: 44px;
@@ -113,28 +113,71 @@ body {
   height: 265px;
   margin-top: 17px;
   margin-left: 13px;
+  border-radius: 8px;
 }
 
 .werktijdenflex {
   display: flex;
-  justify-content: center; /* centreren in de container */
-  align-items: flex-start;
-  gap: 40px;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+@media screen and (max-width: 768px) {
+    .werktijdenflex {
+        flex-direction: column;
+        align-items: center; /* optioneel */
+    }
+        #werktijdenvak,
+    .werktijdenfotos {
+        width: 100%; /* of auto, afhankelijk van je layout */
+        text-align: center; /* optioneel */
+        margin-left: 19px;
+    }
+
+    .werktijdenfotos img {
+        width: 100%; /* zorgt dat foto's ook mooi schalen */
+        max-width: 400px; /* voorkom te grote afbeeldingen */
+        height: auto;
+        margin-bottom: 1rem;
+    }
 }
 
 .werktijdenfotos {
   display: flex;
-  flex-direction: row;
-  gap: 10px;
-  width: 400px;
+  gap: 75px;
 }
 
 .werktijdenfotos img {
   border-radius: 8px;
-  height: 300px;
-  width: 500px;
-  object-fit: fill;
+  height: 265px;
+  width: 350px;
+  margin-top: 17px;
+  margin-right: 13px; 
 }
+
+/* responsive tijdvak welkompagina */
+@media (max-width: 1650px){
+  #werktijdenflex{
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+  }
+
+  /* #werktijdenslideshow{
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+  } */
+
+  .werktijdenfotos{
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+  }
+  #werktijdenvak{
+    flex-wrap: wrap;
+  }
+}
+/* einde tijdvak welkompagina */
 
 /* recensies welkom pagina */
 
@@ -525,6 +568,8 @@ a {
   width: 90%;
   max-width: 783px;
   padding: 5px;
+  padding-left: 100px;
+    padding-right: 109px;
 }
 #formulierinhoud {
   display: flex;
@@ -723,6 +768,119 @@ a {
 }
 /* einde recentie pagina */
 
+/* diensten pagina */
+#backgroundwerkzaamheden {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#dienstenbox {
+  padding: 5px 40px;
+  background-color: #014421;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  margin-top: 40px;
+
+  width: 60px;
+  height: 50px;
+
+  color: white;
+  font-size: 32px;
+  font-family: 'Playfair Display';
+}
+
+.werkzaamhedenblokken{
+  display: flex;
+  gap: 35px;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  color: white;
+  font-size: 44px;
+  text-align: right;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+.werkzaamhedenblokken p{
+  font-size: 36px;
+}
+.werkzaamhedenknopdiensten{
+  clip-path: circle(50%);
+  background-color: white;
+      margin-top: -78px;
+    width: 130px;
+    height: 130px;
+  display: flex;
+}
+.werkzaamhedenknopdiensten img{
+    height: 100px;
+    width: 100px;
+   margin-top: 12px;
+    margin-left: 15px;
+}
+ #tuinaanleg{
+  width: 45%;
+  height: 375px;
+  background-color: #0d4422;
+  color: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+ }
+  #tuinonderhoud{
+  height: 375px;
+  width: 45%; 
+  background-color: #0d4422;
+  padding: 1.5rem;
+  border-radius: 1rem;
+ }
+  #tuinontwerp{
+  height: 375px;
+  background-color: #014421;
+  border-radius: 10px;
+  padding-right: 5px;
+
+    width: 45%;
+  background-color: #0d4422;
+  padding: 1.5rem;
+  border-radius: 1rem;
+ }
+  #zwemvijvers{
+  height: 375px;
+  width: 45%;
+  background-color: #0d4422;
+  padding: 1.5rem;
+  border-radius: 1rem;
+ }
+
+ @media (max-width: 768px) {
+  .werkzaamhedenblokken {
+    width: 100%;
+    font-size: 22px;
+  }
+
+  .werkzaamhedenknopdiensten {
+    width: 80px;
+    height: 80px;
+    margin-top: -31px;
+  }
+  .werkzaamhedenknopdiensten img{
+      width: 60px;
+        height: 60px;
+        margin-top: 6px;
+        margin-left: 9px;
+  }
+  .werkzaamhedenblokken p{
+  font-size: 20px;
+}
+}
+ 
+/* einde diensten pagina */
+
 /* magager-recensies.php */
 
 #achtergrondManager{
@@ -895,6 +1053,65 @@ a {
   border-radius: 6px;
 }
 
+=======
+/* topbarmanager */
+#topbarmanager{
+  background-color: #0d4422;
+}
+
+#kopteksttbm{
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 25px;
+}
+
+.knopbartbm{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  width: auto;
+  background-color: #013d1d;
+  padding: 5px 10px;
+  gap: 65px;
+}
+
+.knoppentopbartbm{
+  width: auto;
+  height: auto;
+  border: 1px solid black;
+  background-color: #013319;
+  color: white;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+#kopspultbm{
+  display: flex;
+  align-items: center;
+}
+
+.knoppentopbartbm:hover {
+  transform: scale(1.2); 
+} 
+
+.logo_cirkel topbarmanager{
+    width: 20vw;
+    height: 20vw;
+    max-width: 150px;
+    max-height: 150px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* einde topbar manager */
 
 /* responsif maken */
 
@@ -989,9 +1206,83 @@ font-size: 20px;
   border: 10px solid #014421;
 }
 
-
-
+.werkzaamhedenknop img {
+  height: 80px;
+  width: 89px;
+  margin-top: 19px;
+  gap: 5px;
 }
+.werkzaamhedenknop {
+    clip-path: circle(50%);
+    background-color: white;
+    margin-top: -30px;
+    width: 150px;
+    height: 120px;
+}
+  
+}
+
+/*Begin van Welkoms tekst vak*/
+#Welkoms-vak {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #014421;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+  gap: 2vw;
+}
+
+#Welkoms-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#intro-tekstvak {
+  flex: 1 1 300px;
+  background-color: #D9D9D9;
+  padding: 1vw;
+}
+
+#intro-tekst {
+  font-size: 1.5vw;
+  line-height: 1.5;
+}
+
+#Welkoms-fotos {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  align-items: center;
+}
+
+#Welkoms-fotos img {
+  width: 60%;
+  max-width: 600px;
+  height: auto;
+}
+/*Einde van Welkoms tekst vak*/
+
+/*Begin van welkoms tekst vak repsonsive maken*/
+@media (max-width: 768px) {
+  #Welkoms-vak {
+    flex-direction: column;
+    padding: 5%;
+  }
+
+  #Welkoms-fotos img {
+    width: 60%;
+    padding: 4%;
+  }
+
+  #intro-tekst {
+    font-size: 4vw;
+  }
+}
+/*Einde van welkoms tekst vak repsonsive maken*/
 
 /* contactpagina responsive */
 @media (max-width: 1320px) {
@@ -1045,6 +1336,11 @@ font-size: 20px;
     width: auto;
     height: auto;
   }
+
+  #googlemap {
+    width: 300px;
+    height: 250px;
+}
 }
 
 @media (max-width: 534px){
@@ -1068,10 +1364,16 @@ font-size: 20px;
     text-align: left;
     align-items: flex-start;
   }
+  
+  #contactformulier{
+    padding-right: 0px;
+    padding-left: 0px;
+  }
 
   .gegevenshendrik h2 {
     font-size: 1.1rem;
   }
+
 
   /* manager recensies pagina */
 
@@ -1082,6 +1384,7 @@ font-size: 20px;
   .RecensiesManagerVakjes p{
     width: 309px;
   }
+
 }
 /* einde contactpagina responsive */
 
