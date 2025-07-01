@@ -729,6 +729,8 @@ a {
   display: flex;
   flex-wrap: wrap;
   padding: 35px;
+  justify-content: center;
+  gap: 20px;
 }
 
 #managerBox{
@@ -754,7 +756,101 @@ a {
 .RecensiesManagerVakjes p{
   font-family: 'Playfair Display', sans-serif;
   font-size: 25px;
+  width: 365px;
 }
+
+#NieuweRecensieKnop{
+  background-color: #024622;
+  color: #D9D9D9;
+  padding: 18px;
+  width: 166px;
+  border-radius: 6px;
+  font-size: 25px;
+  border: 10px solid #012c16;
+}
+/* einde manager-recensie pagina */
+
+/* nieuwe recensie pagina */
+
+#achtergrondNew{
+  display: flex;
+  height: auto;
+  justify-content: space-evenly;
+  padding: 30px;
+}
+
+#invulveldenBoxNewRecensie{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: auto;
+  width: auto;
+  border: 8px solid #012c16;
+  border-radius: 50px;
+  padding: 40px;
+}
+
+#RecensieNewInfo, #opslaanKnop-recensies{
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 20px;
+}
+
+#RecensieNewInfo p{
+  text-align: center;
+  font-size: 33px;
+  font-weight: bold;
+  color: #000000;
+  width: 364px;
+}
+
+.formulier-rij-recensie {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.formulier-rij-recensie p {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000000;
+  width: 334px;
+  padding-right: 10px;
+}
+
+#schrijver-recensies {
+  background-color: #D9D9D9;
+  border: 4px solid #012c16;
+  font-size: 16px;
+  padding: 5px;
+  width: 300px;
+  height: 20px;
+  border-radius: 10px;
+  padding-top: 10px;
+}
+
+#bericht-recensies {
+  background-color: #D9D9D9;
+  border: 4px solid #012c16;
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.opslaan{
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  color: #ffffff; 
+  border: 3px solid #012c16;
+  border-radius: 10px;
+  padding: 9px;
+  background-color: #024622;
+}
+
+#opslaanKnop-recensie
 
 /* manager-contact.php */
 
@@ -799,6 +895,7 @@ a {
   width: 90px;
   border-radius: 6px;
 }
+
 
 /* responsif maken */
 
