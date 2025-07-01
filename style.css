@@ -1112,14 +1112,57 @@ a {
 
 /* einde topbar manager */
 
-/* responsif maken */
-
-@media (max-width: 850px) {
-
-  /* welkom pagina */
-#beginTextVakWelkom p{
-  font-size: 35px;
+/*Begin van Welkoms tekst vak*/
+#Welkoms-vak {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #014421;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+  gap: 2vw;
 }
+
+#Welkoms-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#intro-tekstvak {
+  flex: 1 1 300px;
+  background-color: #D9D9D9;
+  padding: 1vw;
+}
+
+#intro-tekst {
+  font-size: 1.5vw;
+  line-height: 1.5;
+}
+
+#Welkoms-fotos {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  align-items: center;
+}
+
+#Welkoms-fotos img {
+  width: 60%;
+  max-width: 600px;
+  height: auto;
+}
+/*Einde van Welkoms tekst vak*/
+
+/* responsif maken */
+@media (max-width: 850px) {
+  
+  /* welkom pagina */
+  #beginTextVakWelkom p{
+    font-size: 35px;
+  }
 
 #RecensiesBoxWelkom{
   flex-wrap: wrap;  
@@ -1218,52 +1261,22 @@ font-size: 20px;
     width: 150px;
     height: 120px;
 }
+
+/* werktijden welkom pagina */
   
+#werktijdenwelkom {
+    width: 170px;
+    font-size: 18px;
+    margin-left: 1px;
+    padding: 10px;
 }
 
-/*Begin van Welkoms tekst vak*/
-#Welkoms-vak {
-  display: flex;
-  flex-wrap: wrap;
-  background-color: #014421;
-  justify-content: center;
-  align-items: center;
-  padding: 2%;
-  gap: 2vw;
-}
-
-#Welkoms-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
-#intro-tekstvak {
-  flex: 1 1 300px;
-  background-color: #D9D9D9;
-  padding: 1vw;
-}
-
-#intro-tekst {
-  font-size: 1.5vw;
-  line-height: 1.5;
-}
-
-#Welkoms-fotos {
-  display: flex;
-  flex-direction: column;
-  gap: 1vw;
-  align-items: center;
-}
-
-#Welkoms-fotos img {
-  width: 60%;
-  max-width: 600px;
+#werktijdenvak{
   height: auto;
 }
-/*Einde van Welkoms tekst vak*/
+
+}
+
 
 /*Begin van welkoms tekst vak repsonsive maken*/
 @media (max-width: 768px) {

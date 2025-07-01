@@ -5,10 +5,6 @@ include("includes/topbarmanager.php");
 ?>
 
 <body>
-    
-    <?php
-        include("includes/topBar.php");
-    ?>
 
     <div id="achtergrondNew">
 
