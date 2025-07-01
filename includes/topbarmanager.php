@@ -8,8 +8,8 @@
     <div id="kopteksttbm">Managers overzicht</div>
 
       <div class="knopbartbm">
-        <a href="recensies.php">Recensies</a>
-        <a href="contactform.php">Contactformulier</a>
+        <div class="knoppentopbartbm"><a href="recensies.php">Recensies</a></div>
+        <div class="knoppentopbartbm"><a href="contactform.php">Contactformulier</a></div>
       </div>
 
 </div>
