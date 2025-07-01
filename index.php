@@ -107,11 +107,12 @@
                     Zondag: Gesloten
                     </div>
                 </div>
-
                 <div class="werktijdenfotos">
-                    <img src="assets/fotos/tuinFoto4.webp">
-                    <img src="assets/fotos/tuinFoto6.webp">
+                    <img src="assets/fotos/tuinFoto9.webp">
+                    <img src="assets/fotos/tuinFoto7.webp">
+                    <img src="assets/fotos/tuinFoto1.webp">
                 </div>
+
             </div>
         </div>
         
