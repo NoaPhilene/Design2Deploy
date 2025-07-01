@@ -738,6 +738,7 @@ a {
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
+  padding: 20px;
 }
 
 .RecensiesManagerVakjes{
@@ -747,7 +748,7 @@ a {
   background-color: #d9d9d9;
   border: 18px solid #014421;
   border-radius: 10px;
-  width: 400px;
+  width: 473px;
   min-width: 230px;
   height: auto;
   padding: 20px;
@@ -756,7 +757,7 @@ a {
 .RecensiesManagerVakjes p{
   font-family: 'Playfair Display', sans-serif;
   font-size: 25px;
-  width: 365px;
+  width: 495px;
 }
 
 #NieuweRecensieKnop{
@@ -850,8 +851,6 @@ a {
   background-color: #024622;
 }
 
-#opslaanKnop-recensie
-
 /* manager-contact.php */
 
 #achtergrondManagerContact{
@@ -884,11 +883,11 @@ a {
   padding-bottom: 10px;
 }
 
-#deleteBoxContact{
+#deleteBox{
   padding-top: 20px;
 }
 
-#deleteKnopContact{
+#deleteKnop{
   background-color: #013319;
   color: #D9D9D9;
   padding: 6px;

@@ -26,10 +26,10 @@
                             <p>Bericht: {$v['opmerking']}</p>
                         </div>
 
-                        <div id='deleteBoxContact'>
+                        <div id='deleteBox'>
                             <form action='includes/delete-contact.php' method='POST' onsubmit=\"return confirm('Weet je zeker dat je dit wilt verwijderen?');\">
                                 <input type='hidden' name='id' value='" . htmlspecialchars($v['id']) . "'>
-                                <button type='submit' id=deleteKnopContact>Verwijder</button>
+                                <button type='submit' id=deleteKnop>Verwijder</button>
                             </form>
                         </div>
 
