@@ -765,11 +765,13 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 #kopteksttbm{
     display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 25px;
 }
 
 /* responsif maken */
@@ -806,6 +808,20 @@ font-size: 20px;
 #RecensiesTitle{
   color: #FFFFFF;
   font-size: 25px;
+}
+
+.werkzaamhedenknop img {
+  height: 80px;
+  width: 89px;
+  margin-top: 19px;
+  gap: 5px;
+}
+.werkzaamhedenknop {
+    clip-path: circle(50%);
+    background-color: white;
+    margin-top: -30px;
+    width: 150px;
+    height: 120px;
 }
 
 }
@@ -862,6 +878,11 @@ font-size: 20px;
     width: auto;
     height: auto;
   }
+
+  #googlemap {
+    width: 300px;
+    height: 250px;
+}
 }
 
 @media (max-width: 534px){
@@ -891,9 +912,11 @@ font-size: 20px;
     padding-left: 0px;
   }
 
-    .gegevenshendrik h2 {
+  .gegevenshendrik h2 {
     font-size: 1.1rem;
   }
+
+  
 }
 /* einde contactpagina responsive */
 

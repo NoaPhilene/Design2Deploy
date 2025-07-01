@@ -1,9 +1,9 @@
 <?php
 include("includes/header.php");
 include("includes/connection.php");
-// include("includes/topbar.php");
+include("includes/topbar.php");
 
-include("includes/topbarmanager.php");
+// include("includes/topbarmanager.php");
 ?>
 
 <body>
