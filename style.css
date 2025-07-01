@@ -785,7 +785,7 @@ a {
   align-items: center;
   justify-content: space-evenly;
   height: auto;
-  width: auto;
+  width: 658px;
   border: 8px solid #012c16;
   border-radius: 50px;
   padding: 40px;
@@ -914,6 +914,21 @@ font-size: 20px;
 }
 /* einde welkom pagina */
 
+/* niewe reactie pagina */
+
+#invulveldenBoxNewRecensie {
+  width: 530px;
+  flex-wrap: wrap;
+}
+
+.formulier-rij-recensie {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.formulier-rij-recensie p {
+    justify-content: center;
+}
 }
 
 @media (max-width: 705px) {
@@ -931,6 +946,50 @@ font-size: 20px;
   color: #FFFFFF;
   font-size: 25px;
 }
+
+/* niewe reactie pagina */
+
+#RecensieNewInfo p {
+  font-size: 25px;
+  width: 250px;
+}
+
+#invulveldenBoxNewRecensie {
+  padding: 1px;
+}
+
+.formulier-rij-recensie p {
+  font-size: 20px;
+}
+
+.opslaan {
+  width: 123px;
+  height: 42px;
+  font-size: 17px;
+  padding: 4px;
+}
+
+#schrijver-recensies {
+  width: 270px;
+  height: 18px;
+}
+
+#bericht-recensies {
+  width: 260px;
+}
+
+#achtergrondNew {
+  justify-content: center;
+}
+
+/* manager-contact */
+
+.contactManagerVakjes {
+  width: 279px;
+  border: 10px solid #014421;
+}
+
+
 
 }
 
@@ -1010,8 +1069,18 @@ font-size: 20px;
     align-items: flex-start;
   }
 
-    .gegevenshendrik h2 {
+  .gegevenshendrik h2 {
     font-size: 1.1rem;
+  }
+
+  /* manager recensies pagina */
+
+  .RecensiesManagerVakjes{
+    width: 289px;
+  }
+
+  .RecensiesManagerVakjes p{
+    width: 309px;
   }
 }
 /* einde contactpagina responsive */
