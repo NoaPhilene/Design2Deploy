@@ -106,8 +106,8 @@
                     Zaterdag: Op afspraak<br>
                     Zondag: Gesloten
                     </div>
-                </div>
-                <div class="werktijdenfotos">
+                    </div>
+                    <div class="werktijdenfotos">
                     <img src="assets/fotos/tuinFoto9.webp">
                     <img src="assets/fotos/tuinFoto7.webp">
                     <img src="assets/fotos/tuinFoto1.webp">
