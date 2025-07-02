@@ -84,6 +84,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 20px;
+  gap: 30px;
 }
 
 /* fotos met werktijden */
@@ -99,7 +100,8 @@ body {
 }
 
 #werktijdenwelkom{
-  width: 300px;
+  width: auto;
+  min-width: 190px;
   color: black;
   font-size: 32px;
   margin-left: 15px;
@@ -107,7 +109,7 @@ body {
 
 #werktijdenvak{
   background-color: #D9D9D9;
-  width: 350px;
+  width: auto;
   height: 265px;
   margin-left: 13px;
   border-radius: 8px;
@@ -205,7 +207,6 @@ img {vertical-align: middle;}
 
 #SlideshowRondjes{
   display: flex;
-  width: 489px;
   justify-content: center;
 }
 
@@ -1127,6 +1128,164 @@ a {
 }
 /*Einde van Welkoms tekst vak*/
 
+
+@media (max-width: 1400px) {
+  
+  #intro-tekstvak {
+    width: 720px;
+  }
+  
+  #Welkoms-fotos img {
+    width: 312px;
+    padding-left: 18px;
+  }
+
+  
+}
+
+
+
+/*Begin van welkoms tekst vak repsonsive maken*/
+@media (max-width: 768px) {
+  #Welkoms-vak {
+    flex-direction: column;
+    padding: 5%;
+  }
+  
+  #intro-tekst {
+    font-size: 4vw;
+  }
+}
+/*Einde van welkoms tekst vak repsonsive maken*/
+
+/* contactpagina responsive */
+@media (max-width: 1320px) {
+  #introtekstcontact{
+    width: auto;
+    font-size: 20px;
+    height: auto;
+  }
+
+  #hendrikvierkant{
+    width: auto;
+    height: auto;
+    max-width: 350px;
+    max-height: 218px;
+  }
+
+  #werkdagen{
+    width: auto;
+    height: auto;
+    max-width: 350px;
+    max-height: 218px;
+    font-size: 21px;
+  }
+
+  #hendrikrond{
+    max-width: 350px;
+    width: auto;
+    max-height: 400px;
+    height: auto;
+  }
+
+  #gegevenshendrik{
+    max-width: 800px;
+    width: auto;
+    height: auto;
+    font-size: 2vw;
+  }
+
+  #box1 {
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+    gap: 1px;
+  }
+    #box2{
+      flex-wrap: wrap;
+    width: auto;
+    height: auto;
+  }
+    #box3{
+      flex-wrap: wrap;
+    width: auto;
+    height: auto;
+  }
+  
+  #googlemap {
+    width: 300px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 534px){
+  #gegevenshendrik {
+    font-size: 7px;
+  }
+  .google-maps{
+    max-width: 100%;
+    width: auto;
+    max-height: 250px;
+    height: auto;
+  }
+}
+@media (max-width: 600px) {
+  #formulierinhoud {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #formnamen, #formvelden {
+    text-align: left;
+    align-items: flex-start;
+  }
+  
+  #contactformulier{
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  .gegevenshendrik h2 {
+    font-size: 1.1rem;
+  }
+
+
+  /* manager recensies pagina */
+
+  .RecensiesManagerVakjes{
+    width: 289px;
+  }
+  
+  .RecensiesManagerVakjes p{
+    width: 309px;
+  }
+  
+}
+/* einde contactpagina responsive */
+
+/* welkompagina responsive */
+@media (max-width: 700px){
+  .knoppenwerkzaamheden{
+    max-width: 150px;
+    width: auto;
+    max-height: 150px;
+    height: auto;
+  }
+/* einde welkompagina responsive */
+.RecensiesPaginaVakjes p {
+  font-size: 15px;
+}
+
+#RecensieBox {
+  font-size: 23px;
+}
+
+.RecensiesPaginaVakjes {
+  border: 11px solid #014421;
+}
+}
+/* einde welkom pagina */
+
 /* responsif maken */
 @media (max-width: 850px) {
   
@@ -1169,262 +1328,111 @@ font-size: 20px;
 
 @media (max-width: 705px) {
 
-    /* welkom pagina */
-#beginTextVakWelkom p{
-  font-size: 20px;
-}
-
-.RecensiesVakjesWelkom p{
-  font-size: 10px;
-}
-
-#RecensiesTitle{
-  color: #FFFFFF;
-  font-size: 25px;
-}
-
-/* niewe reactie pagina */
-
-#RecensieNewInfo p {
-  font-size: 25px;
-  width: 250px;
-}
-
-#invulveldenBoxNewRecensie {
-  padding: 1px;
-}
-
-.formulier-rij-recensie p {
-  font-size: 20px;
-}
-
-.opslaan {
-  width: 123px;
-  height: 42px;
-  font-size: 17px;
-  padding: 4px;
-}
-
-#schrijver-recensies {
-  width: 270px;
-  height: 18px;
-}
-
-#bericht-recensies {
-  width: 260px;
-}
-
-#achtergrondNew {
-  justify-content: center;
-}
-
-/* manager-contact */
-
-.contactManagerVakjes {
-  width: 279px;
-  border: 10px solid #014421;
-}
-
-.werkzaamhedenknop img {
-  height: 80px;
-  width: 89px;
-  margin-top: 19px;
-  gap: 5px;
-}
-.werkzaamhedenknop {
-  clip-path: circle(50%);
-  background-color: white;
-  margin-top: -30px;
-  width: 150px;
-  height: 120px;
-}
-
-/* werktijden welkom pagina */
-  
-#werktijdenwelkom {
-  width: 170px;
-  font-size: 18px;
-  margin-left: 1px;
-  padding: 10px;
-}
-
-#werktijdenvak{
-  height: 168px;
-  width: 200px;
-}
-
-.werktijdenfotos img {
-  height: auto;
-  width: 135px;
-}
-
-.werktijdenfotos {
-  gap: 6px;
-}
-
-.werktijdenFotos img {
-  height: 170px;
-}
-
-}
-
-@media (max-width: 1400px) {
-
-  #intro-tekstvak {
-    width: 720px;
-  }
-
-  #Welkoms-fotos img {
-    width: 312px;
-    padding-left: 18px;
-}
-
-}
-
-
-
-/*Begin van welkoms tekst vak repsonsive maken*/
-@media (max-width: 768px) {
-  #Welkoms-vak {
-    flex-direction: column;
-    padding: 5%;
-  }
-
-  #Welkoms-fotos img {
-    width: 270px;
-    padding: 4%;
-  }
-
-  #intro-tekst {
-    font-size: 4vw;
-  }
-}
-/*Einde van welkoms tekst vak repsonsive maken*/
-
-/* contactpagina responsive */
-@media (max-width: 1320px) {
-  #introtekstcontact{
-    width: auto;
+      /* welkom pagina */
+  #beginTextVakWelkom p{
     font-size: 20px;
+  }
+
+  .RecensiesVakjesWelkom p{
+    font-size: 10px;
+  }
+
+  #RecensiesTitle{
+    color: #FFFFFF;
+    font-size: 25px;
+  }
+
+  /* niewe reactie pagina */
+
+  #RecensieNewInfo p {
+    font-size: 25px;
+    width: 250px;
+  }
+
+  #invulveldenBoxNewRecensie {
+    padding: 1px;
+  }
+
+  .formulier-rij-recensie p {
+    font-size: 20px;
+  }
+
+  .opslaan {
+    width: 123px;
+    height: 42px;
+    font-size: 17px;
+    padding: 4px;
+  }
+
+  #schrijver-recensies {
+    width: 270px;
+    height: 18px;
+  }
+
+  #bericht-recensies {
+    width: 260px;
+  }
+
+  #achtergrondNew {
+    justify-content: center;
+  }
+
+  /* manager-contact */
+
+  .contactManagerVakjes {
+    width: 279px;
+    border: 10px solid #014421;
+  }
+
+  .werkzaamhedenknop img {
+    padding: 10px;
+    height: auto;
+    width: 50px;
+    margin-top: 5px;
+    margin-left: -2px;
+  }
+  .werkzaamhedenknop {
+    clip-path: circle(43%);
+    background-color: white;
+    margin-top: -30px;
+    width: 65px;
     height: auto;
   }
 
-  #hendrikvierkant{
-    width: auto;
+  /* werktijden welkom pagina */
+    
+  #werktijdenwelkom {
+    width: 170px;
+    font-size: 17px;
+    margin-left: 1px;
+    padding: 18px;
+  }
+
+  #werktijdenvak{
+    height: 168px;
+    width: 200px;
+  }
+
+  .werktijdenfotos img {
     height: auto;
-    max-width: 350px;
-    max-height: 218px;
+    width: 135px;
   }
 
-  #werkdagen{
-    width: auto;
-    height: auto;
-    max-width: 350px;
-    max-height: 218px;
-     font-size: 21px;
+  .werktijdenfotos {
+    gap: 6px;
   }
 
-  #hendrikrond{
-    max-width: 350px;
-    width: auto;
-    max-height: 400px;
-    height: auto;
+  .werktijdenFotos img {
+    height: 170px;
   }
 
-  #gegevenshendrik{
-    max-width: 800px;
-    width: auto;
-    height: auto;
-    font-size: 2vw;
+  #Welkoms-fotos img {
+    width: 179px;
+    padding: 2%;
   }
 
-  #box1 {
-    flex-wrap: wrap;
-    width: auto;
-    height: auto;
-    gap: 1px;
-  }
-    #box2{
-    flex-wrap: wrap;
-    width: auto;
-    height: auto;
-  }
-    #box3{
-    flex-wrap: wrap;
-    width: auto;
-    height: auto;
-  }
-
-  #googlemap {
-    width: 300px;
-    height: 250px;
-}
-}
-
-@media (max-width: 534px){
-    #gegevenshendrik {
-    font-size: 7px;
-  }
-  .google-maps{
-    max-width: 100%;
-    width: auto;
-    max-height: 250px;
-    height: auto;
-  }
-}
-@media (max-width: 600px) {
-  #formulierinhoud {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #formnamen, #formvelden {
-    text-align: left;
-    align-items: flex-start;
-  }
-  
-  #contactformulier{
-    padding-right: 0px;
-    padding-left: 0px;
-  }
-
-  .gegevenshendrik h2 {
-    font-size: 1.1rem;
-  }
-
-
-  /* manager recensies pagina */
-
-  .RecensiesManagerVakjes{
-    width: 289px;
-  }
-
-  .RecensiesManagerVakjes p{
-    width: 309px;
-  }
-
-}
-/* einde contactpagina responsive */
-
-/* welkompagina responsive */
-@media (max-width: 700px){
-  .knoppenwerkzaamheden{
-    max-width: 150px;
-    width: auto;
-    max-height: 150px;
-    height: auto;
-  }
-/* einde welkompagina responsive */
-.RecensiesPaginaVakjes p {
-font-size: 15px;
+  #werkzaamheden {
+    height: 160px;
 }
 
-#RecensieBox {
-  font-size: 23px;
 }
-
-.RecensiesPaginaVakjes {
-  border: 11px solid #014421;
-}
-}
-/* einde welkom pagina */
