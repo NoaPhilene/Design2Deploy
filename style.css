@@ -284,8 +284,8 @@ img {vertical-align: middle;}
 }
 
 .prev, .next, .dot {
-  position: relative;
-  z-index: 10;
+    position: relative;
+    z-index: 10;
 }
 
 /* als je er over heen gaat komt er een vakje om heen */
@@ -428,67 +428,67 @@ a {
 
 /*Begin van header & footer responsive maken*/
 @media all and (max-width:768px){
-.header {
-  padding: 10px;
-  gap: 10px; 
-}
+ .header {
+    padding: 10px;
+    gap: 10px; 
+  }
 
-#titel {
-  font-size: 5vw;
-  flex: 1;
-  text-align: center;
-}
+  #titel {
+    font-size: 5vw;
+    flex: 1;
+    text-align: center;
+  }
 
-.logo_cirkel {
-  width: 60px;
-  height: 60px;
-}
+  .logo_cirkel {
+    width: 60px;
+    height: 60px;
+  }
 
-#logo {
-  width: 130%;
-  max-width: 70px;
-  margin-top: -5px;
-}
+  #logo {
+    width: 130%;
+    max-width: 70px;
+    margin-top: -5px;
+  }
 
-#buttonbar-tekst{
-  font-size: 3.5vw;
-}
+  #buttonbar-tekst{
+    font-size: 3.5vw;
+  }
 
-.button-bar {
-  gap: 3vw; 
-  flex-wrap: nowrap; 
-  overflow-x: auto;  
-}
+  .button-bar {
+    gap: 3vw; 
+    flex-wrap: nowrap; 
+    overflow-x: auto;  
+  }
 
-.button {
-  width: auto;
-  min-width: 60px;
-  font-size: 3.5vw;
-  padding: 5px 8px;
-  height: auto;
-  white-space: nowrap;
-}
+  .button {
+    width: auto;
+    min-width: 60px;
+    font-size: 3.5vw;
+    padding: 5px 8px;
+    height: auto;
+    white-space: nowrap;
+  }
 
-.column {
-  width: 33.33%;
-  padding: 0 5px;
-}
+  .column {
+    width: 33.33%;
+    padding: 0 5px;
+  }
 
-#footer-titels{
-  font-size: 3vw;
-}
+  #footer-titels{
+    font-size: 3vw;
+  }
 
-#footer-linksrechts{
-  font-size: 2vw;
-}
+  #footer-linksrechts{
+    font-size: 2vw;
+  }
 
-#footer-middle{
-  font-size: 1.8vw;
-}
+  #footer-middle{
+    font-size: 1.8vw;
+  }
 
-p {
-  font-size: 3vw;
-}
+  p {
+    font-size: 3vw;
+  }
 
 }
 /*Einde van header & footer responsive maken*/
@@ -702,6 +702,7 @@ p {
   width: 800px;
   height: 400px;
 }
+
 /* Einde contactpagina */
 
 /* begin recentie.php */
@@ -761,10 +762,10 @@ p {
 
 /* diensten pagina */
 #backgroundwerkzaamheden {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #dienstenbox {
@@ -803,24 +804,20 @@ p {
 .werkzaamhedenknopdiensten{
   clip-path: circle(50%);
   background-color: white;
-  margin-top: -78px;
-  width: 130px;
-  height: 130px;
+      margin-top: -78px;
+    width: 130px;
+    height: 130px;
   display: flex;
 }
 .werkzaamhedenknopdiensten img{
-  height: 100px;
-  width: 100px;
-  margin-top: 12px;
-  margin-left: 15px;
+    height: 100px;
+    width: 100px;
+   margin-top: 12px;
+    margin-left: 15px;
 }
  #tuinaanleg{
-  width: 375px;
+  width: 45%;
   height: 375px;
-  background-color: #014421;
-  border-radius: 10px;
-  padding-right: 5px;
-
   background-color: #0d4422;
   color: white;
   padding: 1.5rem;
@@ -829,10 +826,6 @@ p {
   #tuinonderhoud{
   height: 375px;
   width: 45%; 
-  background-color: #014421;
-  border-radius: 10px;
-  padding-right: 5px;
-
   background-color: #0d4422;
   padding: 1.5rem;
   border-radius: 1rem;
@@ -843,16 +836,14 @@ p {
   border-radius: 10px;
   padding-right: 5px;
 
+    width: 45%;
   background-color: #0d4422;
   padding: 1.5rem;
   border-radius: 1rem;
  }
   #zwemvijvers{
   height: 375px;
-  background-color: #014421;
-  border-radius: 10px;
-  padding-right: 5px;
-
+  width: 45%;
   background-color: #0d4422;
   padding: 1.5rem;
   border-radius: 1rem;
