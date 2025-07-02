@@ -97,21 +97,29 @@
         <div id="werktijdenslideshow">
             <div class="werktijdenflex">
                 <div id="werktijdenvak">
+
                     <div id="werktijdenwelkom">
-                    Maandag: 7:00-16:00<br>
-                    Dinsdag: 7:00-16:00<br>
-                    Woensdag: 7:00-16:00<br>
-                    Donderdag: 7:00-16:00<br>
-                    Vrijdag: 7:00-16:00<br>
-                    Zaterdag: Op afspraak<br>
-                    Zondag: Gesloten
+                        Maandag: 7:00-16:00<br>
+                        Dinsdag: 7:00-16:00<br>
+                        Woensdag: 7:00-16:00<br>
+                        Donderdag: 7:00-16:00<br>
+                        Vrijdag: 7:00-16:00<br>
+                        Zaterdag: Op afspraak<br>
+                        Zondag: Gesloten
                     </div>
-                    </div>
-                    <div class="werktijdenfotos">
-                    <img src="assets/fotos/tuinFoto9.webp">
-                    <img src="assets/fotos/tuinFoto7.webp">
-                    <img src="assets/fotos/tuinFoto1.webp">
                 </div>
+
+                    <div class="werktijdenFotos">
+                        <img src="assets/fotos/tuinFoto9.webp">
+                    </div>
+
+                    <div class="werktijdenFotos">
+                        <img src="assets/fotos/tuinFoto7.webp">
+                    </div>
+
+                    <div class="werktijdenFotos">
+                        <img src="assets/fotos/tuinFoto1.webp">
+                    </div>
 
             </div>
         </div>

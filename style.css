@@ -89,15 +89,13 @@ body {
 /* fotos met werktijden */
 #werktijdenslideshow{
   display: flex;
-
   flex-direction: column;
   color: white;
   font-size: 44px;
   text-align: left;
-
-  width: auto;
-  height: 300px;
+  height: auto;
   background-color: #014421;
+  padding: 20px;
 }
 
 #werktijdenwelkom{
@@ -111,39 +109,24 @@ body {
   background-color: #D9D9D9;
   width: 350px;
   height: 265px;
-  margin-top: 17px;
   margin-left: 13px;
   border-radius: 8px;
 
   display: flex;
-  gap: 75px;
-}
-
-#werktijdenvak img{
-  border-radius: 8px;
-  height: auto;
-  width: 350px;
-  margin-top: 17px;
-  margin-right: 13px; 
 }
 
 .werktijdenflex {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-/* .werktijdenfotos {
-  display: flex;
-  gap: 75px;
-} */
-
-.werktijdenfotos img {
+.werktijdenFotos img {
   border-radius: 8px;
   height: 246px;
   width: auto;
-  margin-top: 27px;
-  margin-right: 50px;
 }
 
 /* responsive tijdvak welkompagina */
@@ -154,20 +137,14 @@ body {
     height: auto;
   }
 
-  /* #werktijdenslideshow{
-    flex-wrap: wrap;
-    width: auto;
-    height: auto;
-  } */
-
   .werktijdenfotos{
     flex-wrap: wrap;
     width: auto;
     height: auto;
   }
-  #werktijdenvak{
+  /* #werktijdenvak{
     flex-wrap: wrap;
-  }
+  } */
 }
 /* einde tijdvak welkompagina */
 
@@ -1090,16 +1067,15 @@ a {
 } 
 
 .logo_cirkel topbarmanager{
-    width: 20vw;
-    height: 20vw;
-    max-width: 150px;
-    max-height: 150px;
-    background-color: #ffffff;
-    border-radius: 50%;
-    display: flex
-;
-    align-items: center;
-    justify-content: center;
+  width: 20vw;
+  height: 20vw;
+  max-width: 150px;
+  max-height: 150px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -1125,9 +1101,10 @@ a {
 }
 
 #intro-tekstvak {
-  flex: 1 1 300px;
+  display: flex;
   background-color: #D9D9D9;
   padding: 1vw;
+  width: 905px;
 }
 
 #intro-tekst {
@@ -1143,9 +1120,10 @@ a {
 }
 
 #Welkoms-fotos img {
-  width: 60%;
-  max-width: 600px;
-  height: auto;
+   width: 380px;
+    max-width: 600px;
+    height: auto;
+    padding-left: 25px;
 }
 /*Einde van Welkoms tekst vak*/
 
@@ -1181,6 +1159,12 @@ font-size: 20px;
 .formulier-rij-recensie p {
     justify-content: center;
 }
+
+#Welkoms-fotos {
+  flex-direction: row;
+  justify-content: center;
+}
+
 }
 
 @media (max-width: 705px) {
@@ -1265,20 +1249,38 @@ font-size: 20px;
 }
 
 #werktijdenvak{
-  height: auto;
+  height: 168px;
   width: 200px;
 }
 
 .werktijdenfotos img {
-    height: auto;
-    width: 135px;
+  height: auto;
+  width: 135px;
 }
 
 .werktijdenfotos {
-    gap: 6px;
+  gap: 6px;
+}
+
+.werktijdenFotos img {
+  height: 170px;
 }
 
 }
+
+@media (max-width: 1400px) {
+
+  #intro-tekstvak {
+    width: 720px;
+  }
+
+  #Welkoms-fotos img {
+    width: 312px;
+    padding-left: 18px;
+}
+
+}
+
 
 
 /*Begin van welkoms tekst vak repsonsive maken*/
@@ -1289,7 +1291,7 @@ font-size: 20px;
   }
 
   #Welkoms-fotos img {
-    width: 60%;
+    width: 270px;
     padding: 4%;
   }
 
