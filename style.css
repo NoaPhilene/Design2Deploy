@@ -1025,6 +1025,16 @@ a {
 }
 
 /* topbarmanager */
+
+#managerTopbar{
+  display: flex;
+  align-items: center;
+}
+
+#managerTopbarTekst{
+  width: 83%;
+}
+
 #topbarmanager{
   background-color: #0d4422;
 }
@@ -1433,6 +1443,14 @@ font-size: 20px;
 
   #werkzaamheden {
     height: 160px;
-}
+  }
+
+  .knoppentopbartbm {
+    font-size: 15px;
+  }
+
+  .knopbartbm {
+    gap: 30px;
+  }
 
 }
