@@ -1066,15 +1066,15 @@ a {
 } 
 
 .logo_cirkel topbarmanager{
-    width: 20vw;
-    height: 20vw;
-    max-width: 150px;
-    max-height: 150px;
-    background-color: #ffffff;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 20vw;
+  height: 20vw;
+  max-width: 150px;
+  max-height: 150px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -1100,9 +1100,10 @@ a {
 }
 
 #intro-tekstvak {
-  flex: 1 1 300px;
+  display: flex;
   background-color: #D9D9D9;
   padding: 1vw;
+  width: 905px;
 }
 
 #intro-tekst {
@@ -1118,9 +1119,10 @@ a {
 }
 
 #Welkoms-fotos img {
-  width: 60%;
-  max-width: 600px;
-  height: auto;
+   width: 380px;
+    max-width: 600px;
+    height: auto;
+    padding-left: 25px;
 }
 /*Einde van Welkoms tekst vak*/
 
@@ -1156,6 +1158,12 @@ font-size: 20px;
 .formulier-rij-recensie p {
     justify-content: center;
 }
+
+#Welkoms-fotos {
+  flex-direction: row;
+  justify-content: center;
+}
+
 }
 
 @media (max-width: 705px) {
@@ -1259,6 +1267,20 @@ font-size: 20px;
 
 }
 
+@media (max-width: 1400px) {
+
+  #intro-tekstvak {
+    width: 720px;
+  }
+
+  #Welkoms-fotos img {
+    width: 312px;
+    padding-left: 18px;
+}
+
+}
+
+
 
 /*Begin van welkoms tekst vak repsonsive maken*/
 @media (max-width: 768px) {
@@ -1268,7 +1290,7 @@ font-size: 20px;
   }
 
   #Welkoms-fotos img {
-    width: 60%;
+    width: 270px;
     padding: 4%;
   }
 
