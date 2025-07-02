@@ -1,4 +1,11 @@
-<div id='managerBox'>
+<?php
+    include("includes/header.php");
+    include("includes/connection.php");
+    include("includes/topbarmanager.php");
+?>
+
+    <div id='achtergrondManagerContact'>
+        <div id='managerBox'>
 
             <?php
                 try{
@@ -6,10 +13,27 @@
                     $stmt->execute();
 
                     foreach ($stmt->fetchAll() as $k => $v) {
-                    echo "<div class='RecensiesManagerVakjes'>
-                        <div id='emailOverzicht'><p>{$v['email']}</p></div>
-                        <div id='telefoonnummerOverzicht'><p>{$v['telefoonnummer']}</p></div>
-                        <div id='opmerking-overzicht'><p>{$v['opmerking']}</p></div>
+                    echo "<div class='contactManagerVakjes'>
+
+                        <a href ='mailto:{$v['email']}'><div id='emailManagerContact'>
+                            <p>E-mail: {$v['email']}</p>
+                        </div></a>
+
+                        <a href='tel:{$v['telefoonnummer']}'><div id='telefoonnummerManagerContact'>
+                            <p>telefoonnummer: {$v['telefoonnummer']}</p>
+                        </div></a>
+
+                        <div id='opmerkingManagerContact'>
+                            <p>Bericht: {$v['opmerking']}</p>
+                        </div>
+
+                        <div id='deleteBox'>
+                            <form action='includes/delete-contact.php' method='POST' onsubmit=\"return confirm('Weet je zeker dat je dit wilt verwijderen?');\">
+                                <input type='hidden' name='id' value='" . htmlspecialchars($v['id']) . "'>
+                                <button type='submit' id=deleteKnop>Verwijder</button>
+                            </form>
+                        </div>
+
                     </div>";
                 }
                 } catch (PDOException $e){
@@ -17,5 +41,12 @@
                 }
 
             ?>
-
         </div>
+
+    </div>
+
+</body>
+
+<?php
+    include("includes/footer.php");
+?>

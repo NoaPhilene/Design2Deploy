@@ -113,28 +113,71 @@ body {
   height: 265px;
   margin-top: 17px;
   margin-left: 13px;
+  border-radius: 8px;
 }
 
 .werktijdenflex {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 40px;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+@media screen and (max-width: 768px) {
+    .werktijdenflex {
+        flex-direction: column;
+        align-items: center; /* optioneel */
+    }
+        #werktijdenvak,
+    .werktijdenfotos {
+        width: 100%; /* of auto, afhankelijk van je layout */
+        text-align: center; /* optioneel */
+        margin-left: 19px;
+    }
+
+    .werktijdenfotos img {
+        width: 100%; /* zorgt dat foto's ook mooi schalen */
+        max-width: 400px; /* voorkom te grote afbeeldingen */
+        height: auto;
+        margin-bottom: 1rem;
+    }
 }
 
 .werktijdenfotos {
   display: flex;
-  flex-direction: row;
-  gap: 10px;
-  width: 400px;
+  gap: 75px;
 }
 
 .werktijdenfotos img {
   border-radius: 8px;
-  height: 300px;
-  width: 500px;
-  object-fit: fill;
+  height: 265px;
+  width: 350px;
+  margin-top: 17px;
+  margin-right: 13px; 
 }
+
+/* responsive tijdvak welkompagina */
+@media (max-width: 1650px){
+  #werktijdenflex{
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+  }
+
+  /* #werktijdenslideshow{
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+  } */
+
+  .werktijdenfotos{
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+  }
+  #werktijdenvak{
+    flex-wrap: wrap;
+  }
+}
+/* einde tijdvak welkompagina */
 
 /* recensies welkom pagina */
 
@@ -754,7 +797,7 @@ p {
   padding-top: 19px;
   padding-bottom: 19px;
   color: white;
-  font-size: 32px;
+  font-size: 44px;
   text-align: right;
 
   display: flex;
@@ -790,46 +833,37 @@ p {
   color: white;
   padding: 1.5rem;
   border-radius: 1rem;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
  }
   #tuinonderhoud{
-   width: 375px;
   height: 375px;
+  width: 45%; 
   background-color: #014421;
   border-radius: 10px;
   padding-right: 5px;
 
   background-color: #0d4422;
-  color: white;
   padding: 1.5rem;
   border-radius: 1rem;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
  }
   #tuinontwerp{
-  width: 375px;
   height: 375px;
   background-color: #014421;
   border-radius: 10px;
   padding-right: 5px;
 
   background-color: #0d4422;
-  color: white;
   padding: 1.5rem;
   border-radius: 1rem;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
  }
   #zwemvijvers{
-  width: 375px;
   height: 375px;
   background-color: #014421;
   border-radius: 10px;
   padding-right: 5px;
 
   background-color: #0d4422;
-  color: white;
   padding: 1.5rem;
   border-radius: 1rem;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
  }
 
  @media (max-width: 768px) {
@@ -861,6 +895,9 @@ p {
 #achtergrondManager{
   display: flex;
   flex-wrap: wrap;
+  padding: 35px;
+  justify-content: center;
+  gap: 20px;
 }
 
 #managerBox{
@@ -868,6 +905,7 @@ p {
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
+  padding: 20px;
 }
 
 .RecensiesManagerVakjes{
@@ -877,7 +915,7 @@ p {
   background-color: #d9d9d9;
   border: 18px solid #014421;
   border-radius: 10px;
-  width: 400px;
+  width: 473px;
   min-width: 230px;
   height: auto;
   padding: 20px;
@@ -886,87 +924,202 @@ p {
 .RecensiesManagerVakjes p{
   font-family: 'Playfair Display', sans-serif;
   font-size: 25px;
+  width: 495px;
 }
 
-#topbarmanager{
-  background-color: #014421;
-  color: white;
-  width: auto;
-  height: 250px;
-  justify-content: center;
+#NieuweRecensieKnop{
+  background-color: #024622;
+  color: #D9D9D9;
+  padding: 18px;
+  width: 166px;
+  border-radius: 6px;
+  font-size: 25px;
+  border: 10px solid #012c16;
+}
+/* einde manager-recensie pagina */
+
+/* nieuwe recensie pagina */
+
+#achtergrondNew{
+  display: flex;
+  height: auto;
+  justify-content: space-evenly;
+  padding: 30px;
+}
+
+#invulveldenBoxNewRecensie{
+  display: flex;
   align-items: center;
-
+  justify-content: space-evenly;
+  height: auto;
+  width: 658px;
+  border: 8px solid #012c16;
+  border-radius: 50px;
+  padding: 40px;
 }
+
+#RecensieNewInfo, #opslaanKnop-recensies{
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 20px;
+}
+
+#RecensieNewInfo p{
+  text-align: center;
+  font-size: 33px;
+  font-weight: bold;
+  color: #000000;
+  width: 364px;
+}
+
+.formulier-rij-recensie {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.formulier-rij-recensie p {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000000;
+  width: 334px;
+  padding-right: 10px;
+}
+
+#schrijver-recensies {
+  background-color: #D9D9D9;
+  border: 4px solid #012c16;
+  font-size: 16px;
+  padding: 5px;
+  width: 300px;
+  height: 20px;
+  border-radius: 10px;
+  padding-top: 10px;
+}
+
+#bericht-recensies {
+  background-color: #D9D9D9;
+  border: 4px solid #012c16;
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.opslaan{
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  color: #ffffff; 
+  border: 3px solid #012c16;
+  border-radius: 10px;
+  padding: 9px;
+  background-color: #024622;
+}
+
+/* manager-contact.php */
+
+#achtergrondManagerContact{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 35px;
+  justify-content: center;
+}
+
+#emailManagerContact, #opmerkingManagerContact{
+  padding-right: 85px;
+}
+
+.contactManagerVakjes{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  background-color: #d9d9d9;
+  border: 18px solid #014421;
+  border-radius: 10px;
+  width: 400px;
+  min-width: 250px;
+  height: auto;
+  min-height: 130px;
+  padding: 20px;
+}
+
+.contactManagerVakjes p{
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+#deleteBox{
+  padding-top: 20px;
+}
+
+#deleteKnop{
+  background-color: #013319;
+  color: #D9D9D9;
+  padding: 6px;
+  width: 90px;
+  border-radius: 6px;
+}
+
+/* topbarmanager */
+#topbarmanager{
+  background-color: #0d4422;
+}
+
 #kopteksttbm{
   display: flex;
   justify-content: center;
-  align-items: center;
+  color: white;
   font-size: 25px;
 }
+
 .knopbartbm{
-  background-color: #013d1d;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
   width: auto;
-  height: 300px;
+  background-color: #013d1d;
+  padding: 5px 10px;
+  gap: 65px;
 }
 
 .knoppentopbartbm{
-  background-color: 013319;
+  width: auto;
+  height: auto;
   border: 1px solid black;
-    width: 8vw;
-  height: 2vw;
-}
-
-/* responsif maken */
-
-@media (max-width: 850px) {
-
-  /* welkom pagina */
-#beginTextVakWelkom p{
-  font-size: 35px;
-}
-
-#RecensiesBoxWelkom{
-  flex-wrap: wrap;  
-}
-
-.RecensiesPaginaVakjes p {
-font-size: 20px;
-}
-/* einde welkom pagina */
-
-}
-
-@media (max-width: 705px) {
-
-    /* welkom pagina */
-#beginTextVakWelkom p{
-  font-size: 20px;
-}
-
-.RecensiesVakjesWelkom p{
-  font-size: 10px;
-}
-
-#RecensiesTitle{
-  color: #FFFFFF;
+  background-color: #013319;
+  color: white;
   font-size: 25px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
 }
 
-.werkzaamhedenknop img {
-  height: 80px;
-  width: 89px;
-  margin-top: 19px;
-  gap: 5px;
-}
-.werkzaamhedenknop {
-    clip-path: circle(50%);
-    background-color: white;
-    margin-top: -30px;
-    width: 150px;
-    height: 120px;
+#kopspultbm{
+  display: flex;
+  align-items: center;
 }
 
+.knoppentopbartbm:hover {
+  transform: scale(1.2); 
+} 
+
+.logo_cirkel topbarmanager{
+    width: 20vw;
+    height: 20vw;
+    max-width: 150px;
+    max-height: 150px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
 }
+
+
+/* einde topbar manager */
 
 /*Begin van Welkoms tekst vak*/
 #Welkoms-vak {
@@ -1011,6 +1164,128 @@ font-size: 20px;
   height: auto;
 }
 /*Einde van Welkoms tekst vak*/
+
+/* responsif maken */
+@media (max-width: 850px) {
+  
+  /* welkom pagina */
+  #beginTextVakWelkom p{
+    font-size: 35px;
+  }
+
+#RecensiesBoxWelkom{
+  flex-wrap: wrap;  
+}
+
+.RecensiesPaginaVakjes p {
+font-size: 20px;
+}
+/* einde welkom pagina */
+
+/* niewe reactie pagina */
+
+#invulveldenBoxNewRecensie {
+  width: 530px;
+  flex-wrap: wrap;
+}
+
+.formulier-rij-recensie {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.formulier-rij-recensie p {
+    justify-content: center;
+}
+}
+
+@media (max-width: 705px) {
+
+    /* welkom pagina */
+#beginTextVakWelkom p{
+  font-size: 20px;
+}
+
+.RecensiesVakjesWelkom p{
+  font-size: 10px;
+}
+
+#RecensiesTitle{
+  color: #FFFFFF;
+  font-size: 25px;
+}
+
+/* niewe reactie pagina */
+
+#RecensieNewInfo p {
+  font-size: 25px;
+  width: 250px;
+}
+
+#invulveldenBoxNewRecensie {
+  padding: 1px;
+}
+
+.formulier-rij-recensie p {
+  font-size: 20px;
+}
+
+.opslaan {
+  width: 123px;
+  height: 42px;
+  font-size: 17px;
+  padding: 4px;
+}
+
+#schrijver-recensies {
+  width: 270px;
+  height: 18px;
+}
+
+#bericht-recensies {
+  width: 260px;
+}
+
+#achtergrondNew {
+  justify-content: center;
+}
+
+/* manager-contact */
+
+.contactManagerVakjes {
+  width: 279px;
+  border: 10px solid #014421;
+}
+
+.werkzaamhedenknop img {
+  height: 80px;
+  width: 89px;
+  margin-top: 19px;
+  gap: 5px;
+}
+.werkzaamhedenknop {
+    clip-path: circle(50%);
+    background-color: white;
+    margin-top: -30px;
+    width: 150px;
+    height: 120px;
+}
+
+/* werktijden welkom pagina */
+  
+#werktijdenwelkom {
+    width: 170px;
+    font-size: 18px;
+    margin-left: 1px;
+    padding: 10px;
+}
+
+#werktijdenvak{
+  height: auto;
+}
+
+}
+
 
 /*Begin van welkoms tekst vak repsonsive maken*/
 @media (max-width: 768px) {
@@ -1120,7 +1395,17 @@ font-size: 20px;
     font-size: 1.1rem;
   }
 
-  
+
+  /* manager recensies pagina */
+
+  .RecensiesManagerVakjes{
+    width: 289px;
+  }
+
+  .RecensiesManagerVakjes p{
+    width: 309px;
+  }
+
 }
 /* einde contactpagina responsive */
 
@@ -1132,17 +1417,17 @@ font-size: 20px;
     max-height: 150px;
     height: auto;
   }
-}
 /* einde welkompagina responsive */
 .RecensiesPaginaVakjes p {
 font-size: 15px;
 }
 
 #RecensieBox {
-font-size: 23px;
+  font-size: 23px;
 }
 
 .RecensiesPaginaVakjes {
   border: 11px solid #014421;
+}
 }
 /* einde welkom pagina */

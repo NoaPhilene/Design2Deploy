@@ -1,9 +1,9 @@
 <?php
 include("includes/header.php");
 include("includes/connection.php");
-// include("includes/topbar.php");
+include("includes/topbar.php");
 
-include("includes/topbarmanager.php");
+// include("includes/topbarmanager.php");
 ?>
 
 <body>
@@ -23,9 +23,9 @@ include("includes/topbarmanager.php");
                         <div>Opmerking:</div>
                     </div>
                     <div id="formvelden">
-                        <input type="email" name="email" required placeholder="E-mail">
-                        <input type="tel" name="telefoonnummer" required placeholder="Telefoonnummer">
-                        <textarea cols="26" name="opmerking" rows="4"placeholder="Opmerking"></textarea>
+                        <input type="email" name="contact-email" required placeholder="E-mail">
+                        <input type="tel" name="contact-telefoonnummer" required placeholder="Telefoonnummer">
+                        <textarea cols="26" name="contact-opmerking" rows="4"placeholder="Opmerking"></textarea>
 
                         <input type="submit" value="Verstuur">
                     </div>
