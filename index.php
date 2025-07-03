@@ -67,11 +67,11 @@
                     Met behulp van mooie, natuurlijke en duurzame producten en materialen creëer ik een tuin, die garant staat voor een jarenlang plezierig buitenleven. Van een knusse veranda en een mooie vijver, tot een gezellig terras en een kleurrijke bloemenborder: ik stop al mijn energie erin.
                     <br>
                     <br>
-                    Ontwerp<br>
-                    Wat jouw wensen ook zijn, ik maak een goed doordacht ontwerp voor de tuin van je dromen. Met mijn ontwerp krijg je een duidelijk beeld van jouw toekomstige tuin.<br>
-                    Aanleg<br>
-                    Van tuinontwerp naar jouw gewenste tuin. Ik verzorg de aanleg met een goed voorbereid plan. Met een kritisch oog en precisie leg ik de tuin voor je aan.<br>
-                    Onderhoud<br>
+                    <p>Ontwerp<br></p>
+                    Wat jouw wensen ook zijn, ik maak een goed doordacht ontwerp voor de tuin van je dromen. Met mijn ontwerp krijg je een duidelijk beeld van jouw toekomstige tuin.<br><br>
+                    <p>Aanleg<br></p>
+                    Van tuinontwerp naar jouw gewenste tuin. Ik verzorg de aanleg met een goed voorbereid plan. Met een kritisch oog en precisie leg ik de tuin voor je aan.<br><br>
+                    <p>Onderhoud<br></p>
                     Om het hele jaar door optimaal te genieten van jouw tuin is het belangrijk dat deze goed onderhouden wordt. Ik neem je graag deze zorg uit handen.
                 </div>
             </div>

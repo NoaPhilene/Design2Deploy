@@ -51,6 +51,11 @@ body {
   width: 100%;
 }
 
+#intro-tekst p{
+  font-weight: bold;
+  font-size: 24px;
+}
+
 
 /* werkzaamheden balk */
 #werkzaamheden{
