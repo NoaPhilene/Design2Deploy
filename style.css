@@ -522,6 +522,7 @@ a {
   justify-content: space-evenly;
   gap: 88px;
 }
+
 #hendrikrond{
   clip-path: circle(50%);
   
@@ -529,6 +530,7 @@ a {
   height: 350px;
   margin-top: 50px;
 }
+
 #contactformulier{
   display: flex;
   text-align: center;
@@ -551,6 +553,7 @@ a {
 #formulierinhoud {
   display: flex;
   gap: 20px;
+  padding-top: 15px;
 }
 #formnamen {
   display: flex;
@@ -688,6 +691,7 @@ a {
   height: 400px;
 }
 
+
 /* Einde contactpagina */
 
 /* begin recentie.php */
@@ -747,10 +751,10 @@ a {
 
 /* diensten pagina */
 #backgroundwerkzaamheden {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #dienstenbox {
@@ -760,10 +764,10 @@ a {
   justify-content: center;
   border-radius: 10px;
   margin-top: 40px;
-
+  
   width: 60px;
   height: 50px;
-
+  
   color: white;
   font-size: 32px;
   font-family: 'Playfair Display';
@@ -777,7 +781,7 @@ a {
   color: white;
   font-size: 44px;
   text-align: right;
-
+  
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -789,73 +793,86 @@ a {
 .werkzaamhedenknopdiensten{
   clip-path: circle(50%);
   background-color: white;
-      margin-top: -78px;
-    width: 130px;
-    height: 130px;
+  margin-top: -78px;
+  width: 130px;
+  height: 130px;
   display: flex;
 }
 .werkzaamhedenknopdiensten img{
-    height: 100px;
-    width: 100px;
-   margin-top: 12px;
-    margin-left: 15px;
+  height: 100px;
+  width: 100px;
+  margin-top: 12px;
+  margin-left: 15px;
 }
- #tuinaanleg{
+#tuinaanleg{
   width: 45%;
   height: 375px;
   background-color: #0d4422;
   color: white;
   padding: 1.5rem;
   border-radius: 1rem;
- }
-  #tuinonderhoud{
+}
+#tuinonderhoud{
   height: 375px;
   width: 45%; 
   background-color: #0d4422;
   padding: 1.5rem;
   border-radius: 1rem;
- }
-  #tuinontwerp{
+}
+#tuinontwerp{
   height: 375px;
   background-color: #014421;
   border-radius: 10px;
   padding-right: 5px;
-
-    width: 45%;
+  
+  width: 45%;
   background-color: #0d4422;
   padding: 1.5rem;
   border-radius: 1rem;
- }
-  #zwemvijvers{
+}
+#zwemvijvers{
   height: 375px;
   width: 45%;
   background-color: #0d4422;
   padding: 1.5rem;
   border-radius: 1rem;
- }
+}
 
- @media (max-width: 768px) {
+/* pop up melding */
+#popUpMelding {
+  background-color: #d4edda;
+  color: #155724;
+  border: 2px solid #c3e6cb;
+  padding: 20px;
+  margin: 20px auto;
+  width: fit-content;
+  font-size: 20px;
+  border-radius: 10px;
+  font-family: 'Playfair Display', sans-serif;
+}
+
+@media (max-width: 768px) {
   .werkzaamhedenblokken {
     width: 100%;
     font-size: 22px;
   }
-
+  
   .werkzaamhedenknopdiensten {
     width: 80px;
     height: 80px;
     margin-top: -31px;
   }
   .werkzaamhedenknopdiensten img{
-      width: 60px;
-        height: 60px;
-        margin-top: 6px;
-        margin-left: 9px;
+    width: 60px;
+    height: 60px;
+    margin-top: 6px;
+    margin-left: 9px;
   }
   .werkzaamhedenblokken p{
-  font-size: 20px;
+    font-size: 20px;
+  }
 }
-}
- 
+
 /* einde diensten pagina */
 
 /* magager-recensies.php */

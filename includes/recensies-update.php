@@ -23,7 +23,7 @@
         // voert het stukje sql code uit
         $stmt->execute();
 
-        header("Location: ../manager-recensies.php?save=succes");
+        header("Location: ../manager-recensies.php?save=aangepast");
         exit();
 
 
