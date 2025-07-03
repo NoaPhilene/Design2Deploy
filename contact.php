@@ -15,6 +15,13 @@ include("includes/topbar.php");
 
             <form action="includes/contact-insert.php" method="POST">
                 <div id="contactformulier">
+
+                <?php if (isset($_GET['save']) && $_GET['save'] === 'succes'): ?>
+                    <div id="popUpMelding">
+                        ✅ formulier verstuurt!
+                     </div>
+                <?php endif; ?>
+
                 <h2>Contactformulier</h2>
                     <div id="formulierinhoud">
                     <div id="formnamen">
@@ -80,3 +87,13 @@ include("includes/topbar.php");
 <?php
 include("includes/footer.php");
 ?>
+
+<!-- pop up melding blijft staan voor 4 sec -->
+<script>
+  setTimeout(function () {
+    const melding = document.getElementById('popUpMelding');
+    if (melding) {
+      melding.style.display = 'none';
+    }
+  }, 4000); // verdwijnt na 4 seconden
+</script>

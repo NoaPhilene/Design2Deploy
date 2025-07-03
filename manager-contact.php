@@ -4,6 +4,14 @@
     include("includes/topbarmanager.php");
 ?>
 
+</body>
+
+    <?php if (isset($_GET['save']) && $_GET['save'] === 'verwijdert'): ?>
+        <div id="popUpMelding">
+            ✅ Recensie is verwijdert!
+        </div>
+    <?php endif; ?>
+
     <div id='achtergrondManagerContact'>
         <div id='managerBox'>
 

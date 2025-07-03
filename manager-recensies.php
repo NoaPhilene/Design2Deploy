@@ -5,6 +5,24 @@
 ?>
 
 <body>
+    
+    <?php if (isset($_GET['save']) && $_GET['save'] === 'aangepast'): ?>
+        <div id="popUpMelding">
+            ✅ Recensie is aangepast!
+        </div>
+    <?php endif; ?>
+
+    <?php if (isset($_GET['save']) && $_GET['save'] === 'verwijdert'): ?>
+        <div id="popUpMelding">
+            ✅ Recensie is verwijdert!
+        </div>
+    <?php endif; ?>
+    
+    <?php if (isset($_GET['save']) && $_GET['save'] === 'toegevoegd'): ?>
+        <div id="popUpMelding">
+            ✅ Recensie is toegevoegd!
+        </div>
+    <?php endif; ?>
 
     <div id='achtergrondManager'>
 
@@ -52,3 +70,13 @@
 <?php
     include("includes/footer.php");
 ?>
+
+<!-- pop up melding blijft staan voor 4 sec -->
+<script>
+  setTimeout(function () {
+    const melding = document.getElementById('popUpMelding');
+    if (melding) {
+      melding.style.display = 'none';
+    }
+  }, 4000); // verdwijnt na 4 seconden
+</script>
