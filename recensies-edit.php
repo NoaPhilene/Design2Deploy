@@ -28,48 +28,46 @@ try {
         exit;
     }
 
+    include("includes/topbarmanager.php");
 ?>
 
 <body>
 
-    <?php
-    include("includes/topbarmanager.php");
-    ?>
 
-    <div id="achtergrondEdit">
+    <div id="achtergrondEditRecensies">
     
 
         <div id="editBoxRecensies"> 
 
-             <form action="includes/update.php" method="POST">
+             <form action="includes/recensies-update.php" method="POST">
 
                 <div id="insertVelden">
 
-                <div id="editInfoRecensies">
-                    <p>Verander alleen de velden die je wil veranderen de andere laten hoe die is</p>
-                </div>
+                    <div id="editInfoRecensies">
+                        <p>Verander alleen de velden die je wil veranderen de andere laten hoe ze zijn</p>
+                    </div>
 
                     <input type="hidden" name="id" value="<?= htmlspecialchars($id) ?>">
                 
-                    <div class="formulier-rij">
+                    <div class="formulier-rij-recensies">
                         <p>Bericht van de recensie:</p>
-                        <input type="text" id="bericht-recensies" name="bericht-recensies" value="<?= htmlspecialchars($bericht) ?>">
+                        <textarea id="bericht-recensies-edit" name="bericht-recensies-edit"><?= htmlspecialchars($bericht) ?></textarea>
                         <br>
                     </div>
                     
-                    <div class="formulier-rij">
+                    <div class="formulier-rij-recensies">
                         <p>schrijver/bedenker van recensie:</p>
-                        <input type="text" id="schrijver-recensies" name="schrijver-recensies" value="<?= htmlspecialchars($schrijver) ?>">
+                        <input type="text" id="schrijver-recensies-edit" name="schrijver-recensies-edit" value="<?= htmlspecialchars($schrijver) ?>">
                         <br>
                     </div>
 
-                     <div class="formulier-rij">
+                    <div class="formulier-rij-recensies">
                         <p>Id: <?php echo $id ?></p>
                     </div>
                     
+                    
+                    <button type="submit" class="opslaan" name="submit">Opslaan</button>
                 </div>  
-                
-                <button type="submit" class="opslaan" name="submit">Opslaan</button>
                 
             </form>
         </div>
