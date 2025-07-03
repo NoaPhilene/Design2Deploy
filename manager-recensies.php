@@ -21,18 +21,20 @@
 
                     foreach ($stmt->fetchAll() as $k => $v) {
                     echo "<div class='RecensiesManagerVakjes'>
-                        <div id='RecensiesBericht'><p>{$v['bericht']}</p></div>
+                    <a href='recensies-edit.php?id={$v['id']}'>
+                            <div id='RecensiesBericht'><p>{$v['bericht']}</p></div>
 
-                        <div id='recensiesBox'>
-                            <div id='RecensiesSchrijver'><p>{$v['schrijver']}</p></div>
+                            <div id='recensiesBox'>
+                                <div id='RecensiesSchrijver'><p>{$v['schrijver']}</p></div>
 
-                            <div id='deleteBox'>
-                                <form action='includes/recensies-delete.php' method='POST' onsubmit=\"return confirm('Weet je zeker dat je dit wilt verwijderen?');\">
-                                    <input type='hidden' name='id' value='" . htmlspecialchars($v['id']) . "'>
-                                    <button type='submit' id=deleteKnop>Verwijder</button>
-                                </form>
+                                <div id='deleteBox'>
+                                    <form action='includes/recensies-delete.php' method='POST' onsubmit=\"return confirm('Weet je zeker dat je dit wilt verwijderen?');\">
+                                        <input type='hidden' name='id' value='" . htmlspecialchars($v['id']) . "'>
+                                        <button type='submit' id=deleteKnop>Verwijder</button>
+                                    </form>
+                                </div>
                             </div>
-                        </div>
+                        </a>
 
                     </div>";
                 }
