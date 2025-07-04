@@ -58,3 +58,13 @@
 <?php
     include("includes/footer.php");
 ?>
+
+<!-- pop up melding blijft staan voor 4 sec -->
+<script>
+  setTimeout(function () {
+    const melding = document.getElementById('popUpMelding');
+    if (melding) {
+      melding.style.display = 'none';
+    }
+  }, 4000); // verdwijnt na 4 seconden
+</script>
